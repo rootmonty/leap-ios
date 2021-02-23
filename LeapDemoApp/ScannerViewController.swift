@@ -93,6 +93,10 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 
     func found(infoDict: Dictionary<String,Any>) {
         print(infoDict)
+        
+        let wkWebViewController = WKWebViewController()
+        wkWebViewController.webUrl = infoDict["webUrl"] as? String
+        wkWebViewController.present(wkWebViewController, animated: true, completion: nil)
     }
 
     override var prefersStatusBarHidden: Bool {

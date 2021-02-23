@@ -15,6 +15,7 @@
 		2D1C6FD525E4D4A30079BB17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C6FD325E4D4A30079BB17 /* LaunchScreen.storyboard */; };
 		2D1C6FE025E4D4A40079BB17 /* LeapDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FDF25E4D4A40079BB17 /* LeapDemoAppTests.swift */; };
 		2D1C6FEB25E4D4A40079BB17 /* LeapDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FEA25E4D4A40079BB17 /* LeapDemoAppUITests.swift */; };
+		2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		2D1C6FE625E4D4A40079BB17 /* LeapDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeapDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1C6FEA25E4D4A40079BB17 /* LeapDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapDemoAppUITests.swift; sourceTree = "<group>"; };
 		2D1C6FEC25E4D4A40079BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */,
 				2D1C6FD325E4D4A30079BB17 /* LaunchScreen.storyboard */,
 				2D1C6FD625E4D4A30079BB17 /* Info.plist */,
+				2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */,
 			);
 			path = LeapDemoApp;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				2D1C6FCD25E4D4A10079BB17 /* ScannerViewController.swift in Sources */,
 				2D1C6FC925E4D4A10079BB17 /* AppDelegate.swift in Sources */,
 				2D1C6FCB25E4D4A10079BB17 /* SceneDelegate.swift in Sources */,
+				2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
