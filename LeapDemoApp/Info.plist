@@ -62,5 +62,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>The app needs to scan a Leap QR</string>
 </dict>
 </plist>

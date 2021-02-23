@@ -79,24 +79,20 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
         captureSession.stopRunning()
-
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
-            guard let stringValue = readableObject.stringValue else { return }
+            guard let stringValue = readableObject.stringValue,
+                  let data = stringValue.data(using: .utf8),
+                  let jsonObject = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? Dictionary<String,Any>  else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-            if let url = URL(string: stringValue) { //check whether the string is URL
-                UIApplication.shared.open(url, options: [:], completionHandler: nil)
-            } else {
-                //do more if scanned text is not url string
-            }
-            found(code: stringValue)
+            found(infoDict: jsonObject)
         }
 
         dismiss(animated: true)
     }
 
-    func found(code: String) {
-        print(code)
+    func found(infoDict: Dictionary<String,Any>) {
+        print(infoDict)
     }
 
     override var prefersStatusBarHidden: Bool {
