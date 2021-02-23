@@ -78,13 +78,14 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
 
     func metadataOutput(_ output: AVCaptureMetadataOutput, didOutput metadataObjects: [AVMetadataObject], from connection: AVCaptureConnection) {
-        captureSession.stopRunning()
+        
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard let stringValue = readableObject.stringValue,
                   let data = stringValue.data(using: .utf8),
                   let jsonObject = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as? Dictionary<String,Any>  else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+            captureSession.stopRunning()
             found(infoDict: jsonObject)
         }
 
@@ -92,13 +93,17 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
 
     func found(infoDict: Dictionary<String,Any>) {
-        print(infoDict)
-        
-        let wkWebViewController = WKWebViewController()
-        wkWebViewController.webUrl = infoDict["webUrl"] as? String
-        wkWebViewController.present(wkWebViewController, animated: true, completion: nil)
+        performSegue(withIdentifier: "webpage", sender: infoDict)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard segue.identifier == "webpage",
+              let infoDict = sender as? Dictionary<String,Any>,
+              let wkweb = segue.destination as? WKWebViewController else { return }
+        wkweb.webUrl = infoDict["webUrl"] as? String
+        
+    }
+    
     override var prefersStatusBarHidden: Bool {
         return true
     }
