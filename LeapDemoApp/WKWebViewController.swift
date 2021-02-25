@@ -42,4 +42,9 @@ class WKWebViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+    func pop() {
+        
+        self.navigationController?.popViewController(animated: true)
+    }
 }

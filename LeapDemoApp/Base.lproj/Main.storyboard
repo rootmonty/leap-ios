@@ -15,11 +15,63 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CamIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Agy-Te-Rhb">
+                                <rect key="frame" x="184" y="138" width="46" height="33.5"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QRDemoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="H20-al-xSX">
+                                <rect key="frame" x="20" y="479" width="374" height="70"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect Preview App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idr-MC-Rdy">
+                                <rect key="frame" x="78.5" y="617" width="257" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open your leap dashbaord, go to the app settings, and scan the API QR code to connect the preview app with your account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3Z-Jp-Eob">
+                                <rect key="frame" x="49" y="680" width="316" height="93.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.65490196078431373" green="0.65490196078431373" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rq3-9r-msE">
+                                <rect key="frame" x="138" y="201.5" width="138" height="40"/>
+                                <color key="backgroundColor" red="0.22745098039215686" green="0.21176470588235294" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="pcN-ut-xPk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Open camera">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="openCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nd8-Ln-G5y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Idr-MC-Rdy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="89P-7d-S5D"/>
+                            <constraint firstItem="rq3-9r-msE" firstAttribute="top" secondItem="Agy-Te-Rhb" secondAttribute="bottom" constant="30" id="9yh-WJ-Lnk"/>
+                            <constraint firstItem="s3Z-Jp-Eob" firstAttribute="top" secondItem="Idr-MC-Rdy" secondAttribute="bottom" constant="33" id="N6m-jq-PDp"/>
+                            <constraint firstItem="rq3-9r-msE" firstAttribute="centerX" secondItem="Agy-Te-Rhb" secondAttribute="centerX" id="NLT-nv-3oS"/>
+                            <constraint firstItem="Agy-Te-Rhb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="PIr-6R-fqE"/>
+                            <constraint firstItem="s3Z-Jp-Eob" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="TUa-7H-heS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H20-al-xSX" secondAttribute="trailing" constant="20" id="VWd-U6-Umr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s3Z-Jp-Eob" secondAttribute="bottom" constant="88.5" id="XRP-9R-T3W"/>
+                            <constraint firstItem="rq3-9r-msE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="elX-KG-xKU"/>
+                            <constraint firstItem="Agy-Te-Rhb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="eum-FP-3Me"/>
+                            <constraint firstItem="Agy-Te-Rhb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kJp-qi-NVT"/>
+                            <constraint firstItem="H20-al-xSX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lh6-yo-j6y"/>
+                            <constraint firstItem="s3Z-Jp-Eob" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lx5-rn-pVa"/>
+                            <constraint firstItem="Idr-MC-Rdy" firstAttribute="top" secondItem="H20-al-xSX" secondAttribute="bottom" constant="68" id="pLm-YZ-w68"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PtQ-vG-Wce"/>
                     <connections>
+                        <outlet property="descriptionLabel" destination="s3Z-Jp-Eob" id="Qr0-jv-pWw"/>
+                        <outlet property="openCameraButton" destination="rq3-9r-msE" id="gqW-fr-n52"/>
                         <segue destination="EMa-L8-MKx" kind="show" identifier="webpage" id="qjS-YG-qIf"/>
                     </connections>
                 </viewController>
@@ -63,6 +115,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CamIcon" width="45.5" height="33.5"/>
+        <image name="QRDemoIcon" width="208.5" height="70"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

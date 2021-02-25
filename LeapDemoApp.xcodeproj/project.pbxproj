@@ -16,6 +16,12 @@
 		2D1C6FE025E4D4A40079BB17 /* LeapDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FDF25E4D4A40079BB17 /* LeapDemoAppTests.swift */; };
 		2D1C6FEB25E4D4A40079BB17 /* LeapDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FEA25E4D4A40079BB17 /* LeapDemoAppUITests.swift */; };
 		2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */; };
+		2D1C701B25E66DED0079BB17 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1C701A25E66DED0079BB17 /* UserNotifications.framework */; };
+		2D1C701D25E66DED0079BB17 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1C701C25E66DED0079BB17 /* UserNotificationsUI.framework */; };
+		2D1C702025E66DED0079BB17 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C701F25E66DED0079BB17 /* NotificationViewController.swift */; };
+		2D1C702325E66DED0079BB17 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C702125E66DED0079BB17 /* MainInterface.storyboard */; };
+		2D1C702725E66DED0079BB17 /* Custom Notification Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2D1C701825E66DED0079BB17 /* Custom Notification Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2D1C703025E6D04B0079BB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +39,28 @@
 			remoteGlobalIDString = 2D1C6FC425E4D4A10079BB17;
 			remoteInfo = LeapDemoApp;
 		};
+		2D1C702525E66DED0079BB17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D1C6FBD25E4D4A10079BB17 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1C701725E66DED0079BB17;
+			remoteInfo = "Custom Notification Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2D1C702B25E66DED0079BB17 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2D1C702725E66DED0079BB17 /* Custom Notification Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2D1C6FC525E4D4A10079BB17 /* LeapDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +78,12 @@
 		2D1C6FEA25E4D4A40079BB17 /* LeapDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapDemoAppUITests.swift; sourceTree = "<group>"; };
 		2D1C6FEC25E4D4A40079BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
+		2D1C701825E66DED0079BB17 /* Custom Notification Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Custom Notification Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1C701A25E66DED0079BB17 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		2D1C701C25E66DED0079BB17 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		2D1C701F25E66DED0079BB17 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		2D1C702225E66DED0079BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		2D1C702425E66DED0079BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +108,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D1C701525E66DED0079BB17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1C701D25E66DED0079BB17 /* UserNotificationsUI.framework in Frameworks */,
+				2D1C701B25E66DED0079BB17 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -84,6 +126,8 @@
 				2D1C6FC725E4D4A10079BB17 /* LeapDemoApp */,
 				2D1C6FDE25E4D4A40079BB17 /* LeapDemoAppTests */,
 				2D1C6FE925E4D4A40079BB17 /* LeapDemoAppUITests */,
+				2D1C701E25E66DED0079BB17 /* Custom Notification Extension */,
+				2D1C701925E66DED0079BB17 /* Frameworks */,
 				2D1C6FC625E4D4A10079BB17 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,6 +138,7 @@
 				2D1C6FC525E4D4A10079BB17 /* LeapDemoApp.app */,
 				2D1C6FDB25E4D4A40079BB17 /* LeapDemoAppTests.xctest */,
 				2D1C6FE625E4D4A40079BB17 /* LeapDemoAppUITests.xctest */,
+				2D1C701825E66DED0079BB17 /* Custom Notification Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,11 +149,11 @@
 				2D1C6FC825E4D4A10079BB17 /* AppDelegate.swift */,
 				2D1C6FCA25E4D4A10079BB17 /* SceneDelegate.swift */,
 				2D1C6FCC25E4D4A10079BB17 /* ScannerViewController.swift */,
+				2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */,
 				2D1C6FCE25E4D4A10079BB17 /* Main.storyboard */,
 				2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */,
 				2D1C6FD325E4D4A30079BB17 /* LaunchScreen.storyboard */,
 				2D1C6FD625E4D4A30079BB17 /* Info.plist */,
-				2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */,
 			);
 			path = LeapDemoApp;
 			sourceTree = "<group>";
@@ -131,6 +176,25 @@
 			path = LeapDemoAppUITests;
 			sourceTree = "<group>";
 		};
+		2D1C701925E66DED0079BB17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D1C701A25E66DED0079BB17 /* UserNotifications.framework */,
+				2D1C701C25E66DED0079BB17 /* UserNotificationsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2D1C701E25E66DED0079BB17 /* Custom Notification Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2D1C701F25E66DED0079BB17 /* NotificationViewController.swift */,
+				2D1C702125E66DED0079BB17 /* MainInterface.storyboard */,
+				2D1C702425E66DED0079BB17 /* Info.plist */,
+			);
+			path = "Custom Notification Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,10 +205,12 @@
 				2D1C6FC125E4D4A10079BB17 /* Sources */,
 				2D1C6FC225E4D4A10079BB17 /* Frameworks */,
 				2D1C6FC325E4D4A10079BB17 /* Resources */,
+				2D1C702B25E66DED0079BB17 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2D1C702625E66DED0079BB17 /* PBXTargetDependency */,
 			);
 			name = LeapDemoApp;
 			productName = LeapDemoApp;
@@ -187,6 +253,23 @@
 			productReference = 2D1C6FE625E4D4A40079BB17 /* LeapDemoAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		2D1C701725E66DED0079BB17 /* Custom Notification Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D1C702825E66DED0079BB17 /* Build configuration list for PBXNativeTarget "Custom Notification Extension" */;
+			buildPhases = (
+				2D1C701425E66DED0079BB17 /* Sources */,
+				2D1C701525E66DED0079BB17 /* Frameworks */,
+				2D1C701625E66DED0079BB17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Custom Notification Extension";
+			productName = "Custom Notification Extension";
+			productReference = 2D1C701825E66DED0079BB17 /* Custom Notification Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -207,6 +290,9 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 2D1C6FC425E4D4A10079BB17;
 					};
+					2D1C701725E66DED0079BB17 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 				};
 			};
 			buildConfigurationList = 2D1C6FC025E4D4A10079BB17 /* Build configuration list for PBXProject "LeapDemoApp" */;
@@ -225,6 +311,7 @@
 				2D1C6FC425E4D4A10079BB17 /* LeapDemoApp */,
 				2D1C6FDA25E4D4A40079BB17 /* LeapDemoAppTests */,
 				2D1C6FE525E4D4A40079BB17 /* LeapDemoAppUITests */,
+				2D1C701725E66DED0079BB17 /* Custom Notification Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +338,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D1C701625E66DED0079BB17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1C703025E6D04B0079BB17 /* Assets.xcassets in Resources */,
+				2D1C702325E66DED0079BB17 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +380,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2D1C701425E66DED0079BB17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D1C702025E66DED0079BB17 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -296,6 +400,11 @@
 			isa = PBXTargetDependency;
 			target = 2D1C6FC425E4D4A10079BB17 /* LeapDemoApp */;
 			targetProxy = 2D1C6FE725E4D4A40079BB17 /* PBXContainerItemProxy */;
+		};
+		2D1C702625E66DED0079BB17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D1C701725E66DED0079BB17 /* Custom Notification Extension */;
+			targetProxy = 2D1C702525E66DED0079BB17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -314,6 +423,14 @@
 				2D1C6FD425E4D4A30079BB17 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2D1C702125E66DED0079BB17 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D1C702225E66DED0079BB17 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -370,7 +487,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -425,7 +542,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -438,9 +555,11 @@
 		2D1C6FF025E4D4A40079BB17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DL9XVXT27;
 				INFOPLIST_FILE = LeapDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,9 +575,11 @@
 		2D1C6FF125E4D4A40079BB17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DL9XVXT27;
 				INFOPLIST_FILE = LeapDemoApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -478,7 +599,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LeapDemoAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -499,7 +620,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = LeapDemoAppTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -551,6 +672,46 @@
 			};
 			name = Release;
 		};
+		2D1C702925E66DED0079BB17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DL9XVXT27;
+				INFOPLIST_FILE = "Custom Notification Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leap.LeapDemoApp.Custom-Notification-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D1C702A25E66DED0079BB17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6DL9XVXT27;
+				INFOPLIST_FILE = "Custom Notification Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leap.LeapDemoApp.Custom-Notification-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -586,6 +747,15 @@
 			buildConfigurations = (
 				2D1C6FF625E4D4A40079BB17 /* Debug */,
 				2D1C6FF725E4D4A40079BB17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D1C702825E66DED0079BB17 /* Build configuration list for PBXNativeTarget "Custom Notification Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D1C702925E66DED0079BB17 /* Debug */,
+				2D1C702A25E66DED0079BB17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
