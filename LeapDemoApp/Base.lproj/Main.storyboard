@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="soK-j5-G82">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,17 +21,17 @@
                                 <rect key="frame" x="184" y="138" width="46" height="33.5"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="QRDemoIcon" translatesAutoresizingMaskIntoConstraints="NO" id="H20-al-xSX">
-                                <rect key="frame" x="20" y="479" width="374" height="70"/>
+                                <rect key="frame" x="20" y="453" width="374" height="70"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect Preview App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Idr-MC-Rdy">
-                                <rect key="frame" x="78.5" y="617" width="257" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <rect key="frame" x="104" y="581" width="206" height="24"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open your leap dashbaord, go to the app settings, and scan the API QR code to connect the preview app with your account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s3Z-Jp-Eob">
-                                <rect key="frame" x="49" y="680" width="316" height="93.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <rect key="frame" x="49" y="618" width="316" height="52.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <color key="textColor" red="0.65490196078431373" green="0.65490196078431373" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -52,26 +53,28 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Agy-Te-Rhb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.111111" id="4eq-R5-mis"/>
+                            <constraint firstItem="rq3-9r-msE" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7R3-iW-QbV"/>
                             <constraint firstItem="Idr-MC-Rdy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="89P-7d-S5D"/>
                             <constraint firstItem="rq3-9r-msE" firstAttribute="top" secondItem="Agy-Te-Rhb" secondAttribute="bottom" constant="30" id="9yh-WJ-Lnk"/>
-                            <constraint firstItem="s3Z-Jp-Eob" firstAttribute="top" secondItem="Idr-MC-Rdy" secondAttribute="bottom" constant="33" id="N6m-jq-PDp"/>
-                            <constraint firstItem="rq3-9r-msE" firstAttribute="centerX" secondItem="Agy-Te-Rhb" secondAttribute="centerX" id="NLT-nv-3oS"/>
-                            <constraint firstItem="Agy-Te-Rhb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="184" id="PIr-6R-fqE"/>
+                            <constraint firstItem="Agy-Te-Rhb" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0373884" id="J4h-3A-Jpd"/>
+                            <constraint firstItem="H20-al-xSX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="5" id="JSX-nV-ISL"/>
+                            <constraint firstItem="s3Z-Jp-Eob" firstAttribute="top" secondItem="Idr-MC-Rdy" secondAttribute="bottom" constant="13" id="N6m-jq-PDp"/>
+                            <constraint firstItem="rq3-9r-msE" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.333333" id="TPN-dc-EXr"/>
                             <constraint firstItem="s3Z-Jp-Eob" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="TUa-7H-heS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H20-al-xSX" secondAttribute="trailing" constant="20" id="VWd-U6-Umr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="s3Z-Jp-Eob" secondAttribute="bottom" constant="88.5" id="XRP-9R-T3W"/>
-                            <constraint firstItem="rq3-9r-msE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="elX-KG-xKU"/>
                             <constraint firstItem="Agy-Te-Rhb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="eum-FP-3Me"/>
                             <constraint firstItem="Agy-Te-Rhb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="kJp-qi-NVT"/>
                             <constraint firstItem="H20-al-xSX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lh6-yo-j6y"/>
                             <constraint firstItem="s3Z-Jp-Eob" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lx5-rn-pVa"/>
-                            <constraint firstItem="Idr-MC-Rdy" firstAttribute="top" secondItem="H20-al-xSX" secondAttribute="bottom" constant="68" id="pLm-YZ-w68"/>
+                            <constraint firstItem="Idr-MC-Rdy" firstAttribute="top" secondItem="H20-al-xSX" secondAttribute="bottom" constant="58" id="pLm-YZ-w68"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PtQ-vG-Wce"/>
                     <connections>
                         <outlet property="descriptionLabel" destination="s3Z-Jp-Eob" id="Qr0-jv-pWw"/>
                         <outlet property="openCameraButton" destination="rq3-9r-msE" id="gqW-fr-n52"/>
+                        <outlet property="qrDemoIcon" destination="H20-al-xSX" id="qpW-sT-7VF"/>
                         <segue destination="EMa-L8-MKx" kind="show" identifier="webpage" id="qjS-YG-qIf"/>
                     </connections>
                 </viewController>

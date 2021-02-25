@@ -15,6 +15,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     @IBOutlet weak var descriptionLabel: UILabel!
     
+    @IBOutlet weak var qrDemoIcon: UIImageView!
+    
     var scannerView: UIView?
     
     var captureSession: AVCaptureSession!
