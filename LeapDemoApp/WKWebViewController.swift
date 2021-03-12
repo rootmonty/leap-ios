@@ -12,8 +12,6 @@ class WKWebViewController: UIViewController {
     
     var wkWebView: WKWebView?
     
-    var webUrl: String?
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,7 +20,9 @@ class WKWebViewController: UIViewController {
         self.wkWebView = WKWebView(frame: .zero, configuration: configuration)
         self.view.addSubview(wkWebView!)
         configureWebView()
-        wkWebView?.load(URLRequest(url: URL(string: webUrl!)!))
+        if let infoDict = (UserDefaults.standard.object(forKey: "infoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {
+           wkWebView?.load(URLRequest(url: URL(string: url)!))
+        }
     }
     
     func configureWebView() {
@@ -44,6 +44,8 @@ class WKWebViewController: UIViewController {
     }
     
     func pop() {
+        
+        self.navigationController?.viewControllers.first?.view.isHidden = false
         
         self.navigationController?.popViewController(animated: true)
     }
