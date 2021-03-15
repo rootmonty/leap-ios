@@ -9,6 +9,8 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -40,10 +42,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if granted {
                 print("Notifications permission granted.")
+                let rescanAction = UNNotificationAction(identifier: "rescan",
+                      title: "Rescan",
+                      options: UNNotificationActionOptions(rawValue: 0))
+                
+                let scanSuccessCategory = UNNotificationCategory(identifier: "scanSuccess", actions: [rescanAction], intentIdentifiers: [], options: [])
+                
+                UNUserNotificationCenter.current().setNotificationCategories([scanSuccessCategory])
             }
             else {
-                print("Notifications permission denied because: \(error?.localizedDescription).")
+                print("Notifications permission denied because: \(error?.localizedDescription ?? "Unknown").")
             }
+        }
+    }
+    
+    func triggerNotification(infoDict: Dictionary<String, Any>) {
+        
+        UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+         
+        guard settings.authorizationStatus == .authorized else { return }
+                    
+        let content = UNMutableNotificationContent()
+                    
+        content.categoryIdentifier = "scanSuccess"
+
+        if let appName = infoDict["appName"] as? String {
+           content.title = appName
+           content.subtitle = "connected"
+        }
+                    
+        let uuidString = UUID().uuidString
+        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: nil)
+                                
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         }
     }
 }
@@ -63,9 +94,9 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         case "rescan":
             let rootVC = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController
             
-            if let vc = rootVC?.visibleViewController as? WKWebViewController {
+            if let wkWebController = rootVC?.visibleViewController as? WKWebViewController {
                 
-                vc.pop()
+                wkWebController.pop()
             }
         default:
             break

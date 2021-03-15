@@ -19,6 +19,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     
     var scannerView: UIView?
     
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
 
@@ -28,13 +30,12 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         view.backgroundColor = UIColor.black
         openCameraButton.layer.cornerRadius = openCameraButton.frame.height/2
         
-        let rescanAction = UNNotificationAction(identifier: "rescan",
-              title: "Rescan",
-              options: UNNotificationActionOptions(rawValue: 0))
-        
-        let scanSuccessCategory = UNNotificationCategory(identifier: "scanSuccess", actions: [rescanAction], intentIdentifiers: [], options: [])
-        
-        UNUserNotificationCenter.current().setNotificationCategories([scanSuccessCategory])
+        if let infoDict = (UserDefaults.standard.object(forKey: "infoDict") as? Dictionary<String,Any>) {
+            
+            self.view.isHidden = true
+         
+            found(infoDict: infoDict)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -137,40 +138,19 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     func found(infoDict: Dictionary<String, Any>) {
         
         if let platformType = infoDict["platformType"] as? String, platformType == "IOS" {
-        
-           triggerNotification(infoDict: infoDict)
+            
+           UserDefaults.standard.setValue(infoDict, forKey: "infoDict")
+            
+           appDelegate.triggerNotification(infoDict: infoDict)
         
            performSegue(withIdentifier: "webpage", sender: infoDict)
-        }
-    }
-    
-    func triggerNotification(infoDict: Dictionary<String, Any>) {
-        
-        UNUserNotificationCenter.current().getNotificationSettings { (settings) in
-         
-        guard settings.authorizationStatus == .authorized else { return }
-                    
-        let content = UNMutableNotificationContent()
-                    
-        content.categoryIdentifier = "scanSuccess"
-
-        if let appName = infoDict["appName"] as? String {
-           content.title = appName
-           content.subtitle = "connected"
-        }
-                    
-        let uuidString = UUID().uuidString
-        let request = UNNotificationRequest(identifier: uuidString, content: content, trigger: nil)
-                                
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
         }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard segue.identifier == "webpage",
-              let infoDict = sender as? Dictionary<String,Any>,
-              let wkweb = segue.destination as? WKWebViewController else { return }
-        wkweb.webUrl = infoDict["webUrl"] as? String
+              let _ = sender as? Dictionary<String,Any>,
+              let _ = segue.destination as? WKWebViewController else { return }
     }
     
     override var prefersStatusBarHidden: Bool {
