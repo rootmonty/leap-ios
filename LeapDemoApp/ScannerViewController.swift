@@ -144,6 +144,14 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
            appDelegate.triggerNotification(infoDict: infoDict)
         
            performSegue(withIdentifier: "webpage", sender: infoDict)
+        
+        } else {
+            
+            let wrongQRAlert = UIAlertController(title: "QR not matched", message: "Please scan a QR for an iOS App", preferredStyle: .alert)
+            wrongQRAlert.addAction(UIAlertAction(title: "OK", style: .default))
+            present(wrongQRAlert, animated: true)
+            
+            if (captureSession?.isRunning == false) { captureSession.startRunning() }
         }
     }
 
