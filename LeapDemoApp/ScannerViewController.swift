@@ -132,7 +132,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             found(infoDict: jsonObject)
         }
 
-        dismiss(animated: true)
+        
     }
 
     func found(infoDict: Dictionary<String, Any>) {
@@ -148,10 +148,11 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
         } else {
             
             let wrongQRAlert = UIAlertController(title: "QR not matched", message: "Please scan a QR for an iOS App", preferredStyle: .alert)
-            wrongQRAlert.addAction(UIAlertAction(title: "OK", style: .default))
+            wrongQRAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: {[weak self] (action) in
+                if (self?.captureSession?.isRunning == false) { self?.captureSession.startRunning() }
+            }))
             present(wrongQRAlert, animated: true)
             
-            if (captureSession?.isRunning == false) { captureSession.startRunning() }
         }
     }
 
