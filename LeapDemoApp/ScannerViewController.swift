@@ -137,7 +137,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
 
     func found(infoDict: Dictionary<String, Any>) {
         
-        if let platformType = infoDict["platformType"] as? String, platformType == "IOS" {
+        if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP" {
             
            UserDefaults.standard.setValue(infoDict, forKey: "infoDict")
             
