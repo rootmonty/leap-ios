@@ -43,6 +43,8 @@ class HomeViewController: UIViewController {
         
         if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP", let apiKey = infoDict["apiKey"] as? String {
             
+           leapCameraViewController?.dismiss(animated: true, completion: nil)
+            
            UserDefaults.standard.setValue(infoDict, forKey: "infoDict")
             
             LeapAUI.shared.buildWith(apiKey: apiKey)
