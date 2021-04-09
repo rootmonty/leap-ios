@@ -12,21 +12,21 @@ import LeapCoreSDK
 import LeapAUISDK
 
 class HomeViewController: UIViewController {
+    
+    var leapCameraViewController: UIViewController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        UserDefaults.standard.setValue("dd", forKey: "aa")
-        
-        let leapCameraViewController = LeapCreator.shared.openSampleApp(delegate: self)
-
-        self.navigationController?.present(leapCameraViewController, animated: true, completion: nil)
         
         view.backgroundColor = UIColor.black
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        leapCameraViewController = LeapCreator.shared.openSampleApp(delegate: self)
+
+        self.navigationController?.present(leapCameraViewController!, animated: true, completion: nil)
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -41,15 +41,15 @@ class HomeViewController: UIViewController {
 
     func found(infoDict: Dictionary<String, Any>) {
         
-        if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP" {
+        if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP", let apiKey = infoDict["apiKey"] as? String {
             
            UserDefaults.standard.setValue(infoDict, forKey: "infoDict")
             
-            LeapAUI.shared.buildWith(apiKey: Bundle.main.infoDictionary?["APP_API_KEY"] as! String)
+            LeapAUI.shared.buildWith(apiKey: apiKey)
             .addProperty("username", stringValue: "Aravind")
             .addProperty("age", intValue: 30)
             .addProperty("ts", dateValue: Date()).start()
-            LeapCreator.shared.initialize(withToken: Bundle.main.infoDictionary?["APP_API_KEY"] as! String)
+            LeapCreator.shared.initialize(withToken: apiKey)
                     
            performSegue(withIdentifier: "webpage", sender: infoDict)
         
