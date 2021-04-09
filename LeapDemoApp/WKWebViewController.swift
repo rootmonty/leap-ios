@@ -7,6 +7,8 @@
 
 import UIKit
 import WebKit
+import LeapAUISDK
+import LeapCoreSDK
 
 class WKWebViewController: UIViewController {
     
@@ -23,6 +25,8 @@ class WKWebViewController: UIViewController {
         if let infoDict = (UserDefaults.standard.object(forKey: "infoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {
            wkWebView?.load(URLRequest(url: URL(string: url)!))
         }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(pop), name: .init("rescan"), object: nil)
     }
     
     func configureWebView() {
@@ -43,9 +47,11 @@ class WKWebViewController: UIViewController {
         return true
     }
     
-    func pop() {
+    @objc func pop() {
         
         self.navigationController?.viewControllers.first?.view.isHidden = false
+        
+        LeapAUI.shared.disable()
         
         self.navigationController?.popViewController(animated: true)
     }

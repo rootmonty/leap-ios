@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		2D1C6FC925E4D4A10079BB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FC825E4D4A10079BB17 /* AppDelegate.swift */; };
-		2D1C6FCD25E4D4A10079BB17 /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FCC25E4D4A10079BB17 /* ScannerViewController.swift */; };
+		2D1C6FCD25E4D4A10079BB17 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FCC25E4D4A10079BB17 /* HomeViewController.swift */; };
 		2D1C6FD025E4D4A10079BB17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C6FCE25E4D4A10079BB17 /* Main.storyboard */; };
 		2D1C6FD225E4D4A30079BB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */; };
 		2D1C6FD525E4D4A30079BB17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C6FD325E4D4A30079BB17 /* LaunchScreen.storyboard */; };
 		2D1C6FE025E4D4A40079BB17 /* LeapDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FDF25E4D4A40079BB17 /* LeapDemoAppTests.swift */; };
 		2D1C6FEB25E4D4A40079BB17 /* LeapDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FEA25E4D4A40079BB17 /* LeapDemoAppUITests.swift */; };
 		2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */; };
-		2D1C701B25E66DED0079BB17 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1C701A25E66DED0079BB17 /* UserNotifications.framework */; };
-		2D1C701D25E66DED0079BB17 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1C701C25E66DED0079BB17 /* UserNotificationsUI.framework */; };
-		2D1C702025E66DED0079BB17 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C701F25E66DED0079BB17 /* NotificationViewController.swift */; };
-		2D1C702325E66DED0079BB17 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C702125E66DED0079BB17 /* MainInterface.storyboard */; };
-		2D1C702725E66DED0079BB17 /* Custom Notification Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2D1C701825E66DED0079BB17 /* Custom Notification Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2D1C703025E6D04B0079BB17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */; };
+		2DD2874B261E10E200BCA210 /* LeapCreatorSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD28743261E10B700BCA210 /* LeapCreatorSDK.framework */; };
+		2DD2874C261E10E200BCA210 /* LeapCreatorSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD28743261E10B700BCA210 /* LeapCreatorSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DD28778261E120E00BCA210 /* LeapAUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD28741261E10B700BCA210 /* LeapAUISDK.framework */; };
+		2DD28779261E120E00BCA210 /* LeapAUISDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD28741261E10B700BCA210 /* LeapAUISDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DD2877A261E120E00BCA210 /* LeapCoreSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD2873F261E10B700BCA210 /* LeapCoreSDK.framework */; };
+		2DD2877B261E120E00BCA210 /* LeapCoreSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DD2873F261E10B700BCA210 /* LeapCoreSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +38,33 @@
 			remoteGlobalIDString = 2D1C6FC425E4D4A10079BB17;
 			remoteInfo = LeapDemoApp;
 		};
-		2D1C702525E66DED0079BB17 /* PBXContainerItemProxy */ = {
+		2DD2873E261E10B700BCA210 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2D1C6FBD25E4D4A10079BB17 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2D1C701725E66DED0079BB17;
-			remoteInfo = "Custom Notification Extension";
+			containerPortal = 2DD28732261E10B700BCA210 /* LeapSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D08DA66C25DEA2E800EB0EFC;
+			remoteInfo = LeapCoreSDK;
+		};
+		2DD28740261E10B700BCA210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DD28732261E10B700BCA210 /* LeapSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0B603F725DFB6BA0092F735;
+			remoteInfo = LeapAUISDK;
+		};
+		2DD28742261E10B700BCA210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DD28732261E10B700BCA210 /* LeapSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D02C131625DFC6B000C80E28;
+			remoteInfo = LeapCreatorSDK;
+		};
+		2DD28744261E10B700BCA210 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DD28732261E10B700BCA210 /* LeapSDK.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D0F2C4B425DFCD81006BFF3D;
+			remoteInfo = LeapSampleApp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,9 +75,21 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				2D1C702725E66DED0079BB17 /* Custom Notification Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DD2874D261E10E200BCA210 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DD2874C261E10E200BCA210 /* LeapCreatorSDK.framework in Embed Frameworks */,
+				2DD2877B261E120E00BCA210 /* LeapCoreSDK.framework in Embed Frameworks */,
+				2DD28779261E120E00BCA210 /* LeapAUISDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -64,7 +97,7 @@
 /* Begin PBXFileReference section */
 		2D1C6FC525E4D4A10079BB17 /* LeapDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1C6FC825E4D4A10079BB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D1C6FCC25E4D4A10079BB17 /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		2D1C6FCC25E4D4A10079BB17 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		2D1C6FCF25E4D4A10079BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1C6FD425E4D4A30079BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -76,12 +109,9 @@
 		2D1C6FEA25E4D4A40079BB17 /* LeapDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapDemoAppUITests.swift; sourceTree = "<group>"; };
 		2D1C6FEC25E4D4A40079BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
-		2D1C701825E66DED0079BB17 /* Custom Notification Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Custom Notification Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1C701A25E66DED0079BB17 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		2D1C701C25E66DED0079BB17 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
-		2D1C701F25E66DED0079BB17 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
-		2D1C702225E66DED0079BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		2D1C702425E66DED0079BB17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DD28732261E10B700BCA210 /* LeapSDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LeapSDK.xcodeproj; path = ../Jiny/LeapSDK.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +119,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD2874B261E10E200BCA210 /* LeapCreatorSDK.framework in Frameworks */,
+				2DD2877A261E120E00BCA210 /* LeapCoreSDK.framework in Frameworks */,
+				2DD28778261E120E00BCA210 /* LeapAUISDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,25 +139,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D1C701525E66DED0079BB17 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D1C701D25E66DED0079BB17 /* UserNotificationsUI.framework in Frameworks */,
-				2D1C701B25E66DED0079BB17 /* UserNotifications.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2D1C6FBC25E4D4A10079BB17 = {
 			isa = PBXGroup;
 			children = (
+				2DD28732261E10B700BCA210 /* LeapSDK.xcodeproj */,
 				2D1C6FC725E4D4A10079BB17 /* LeapDemoApp */,
 				2D1C6FDE25E4D4A40079BB17 /* LeapDemoAppTests */,
 				2D1C6FE925E4D4A40079BB17 /* LeapDemoAppUITests */,
-				2D1C701E25E66DED0079BB17 /* Custom Notification Extension */,
 				2D1C701925E66DED0079BB17 /* Frameworks */,
 				2D1C6FC625E4D4A10079BB17 /* Products */,
 			);
@@ -136,7 +160,6 @@
 				2D1C6FC525E4D4A10079BB17 /* LeapDemoApp.app */,
 				2D1C6FDB25E4D4A40079BB17 /* LeapDemoAppTests.xctest */,
 				2D1C6FE625E4D4A40079BB17 /* LeapDemoAppUITests.xctest */,
-				2D1C701825E66DED0079BB17 /* Custom Notification Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,7 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				2D1C6FC825E4D4A10079BB17 /* AppDelegate.swift */,
-				2D1C6FCC25E4D4A10079BB17 /* ScannerViewController.swift */,
+				2D1C6FCC25E4D4A10079BB17 /* HomeViewController.swift */,
 				2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */,
 				2D1C6FCE25E4D4A10079BB17 /* Main.storyboard */,
 				2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */,
@@ -182,14 +205,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2D1C701E25E66DED0079BB17 /* Custom Notification Extension */ = {
+		2DD28733261E10B700BCA210 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D1C701F25E66DED0079BB17 /* NotificationViewController.swift */,
-				2D1C702125E66DED0079BB17 /* MainInterface.storyboard */,
-				2D1C702425E66DED0079BB17 /* Info.plist */,
+				2DD2873F261E10B700BCA210 /* LeapCoreSDK.framework */,
+				2DD28741261E10B700BCA210 /* LeapAUISDK.framework */,
+				2DD28743261E10B700BCA210 /* LeapCreatorSDK.framework */,
+				2DD28745261E10B700BCA210 /* LeapSampleApp.app */,
 			);
-			path = "Custom Notification Extension";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,13 +227,15 @@
 				2D1C6FC225E4D4A10079BB17 /* Frameworks */,
 				2D1C6FC325E4D4A10079BB17 /* Resources */,
 				2D1C702B25E66DED0079BB17 /* Embed App Extensions */,
+				2DD2874D261E10E200BCA210 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2D1C702625E66DED0079BB17 /* PBXTargetDependency */,
 			);
 			name = LeapDemoApp;
+			packageProductDependencies = (
+			);
 			productName = LeapDemoApp;
 			productReference = 2D1C6FC525E4D4A10079BB17 /* LeapDemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -250,23 +276,6 @@
 			productReference = 2D1C6FE625E4D4A40079BB17 /* LeapDemoAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		2D1C701725E66DED0079BB17 /* Custom Notification Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2D1C702825E66DED0079BB17 /* Build configuration list for PBXNativeTarget "Custom Notification Extension" */;
-			buildPhases = (
-				2D1C701425E66DED0079BB17 /* Sources */,
-				2D1C701525E66DED0079BB17 /* Frameworks */,
-				2D1C701625E66DED0079BB17 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Custom Notification Extension";
-			productName = "Custom Notification Extension";
-			productReference = 2D1C701825E66DED0079BB17 /* Custom Notification Extension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -287,9 +296,6 @@
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 2D1C6FC425E4D4A10079BB17;
 					};
-					2D1C701725E66DED0079BB17 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 				};
 			};
 			buildConfigurationList = 2D1C6FC025E4D4A10079BB17 /* Build configuration list for PBXProject "LeapDemoApp" */;
@@ -301,17 +307,55 @@
 				Base,
 			);
 			mainGroup = 2D1C6FBC25E4D4A10079BB17;
+			packageReferences = (
+			);
 			productRefGroup = 2D1C6FC625E4D4A10079BB17 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 2DD28733261E10B700BCA210 /* Products */;
+					ProjectRef = 2DD28732261E10B700BCA210 /* LeapSDK.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				2D1C6FC425E4D4A10079BB17 /* LeapDemoApp */,
 				2D1C6FDA25E4D4A40079BB17 /* LeapDemoAppTests */,
 				2D1C6FE525E4D4A40079BB17 /* LeapDemoAppUITests */,
-				2D1C701725E66DED0079BB17 /* Custom Notification Extension */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		2DD2873F261E10B700BCA210 /* LeapCoreSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LeapCoreSDK.framework;
+			remoteRef = 2DD2873E261E10B700BCA210 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DD28741261E10B700BCA210 /* LeapAUISDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LeapAUISDK.framework;
+			remoteRef = 2DD28740261E10B700BCA210 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DD28743261E10B700BCA210 /* LeapCreatorSDK.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = LeapCreatorSDK.framework;
+			remoteRef = 2DD28742261E10B700BCA210 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		2DD28745261E10B700BCA210 /* LeapSampleApp.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = LeapSampleApp.app;
+			remoteRef = 2DD28744261E10B700BCA210 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		2D1C6FC325E4D4A10079BB17 /* Resources */ = {
@@ -338,15 +382,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D1C701625E66DED0079BB17 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D1C703025E6D04B0079BB17 /* Assets.xcassets in Resources */,
-				2D1C702325E66DED0079BB17 /* MainInterface.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -354,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1C6FCD25E4D4A10079BB17 /* ScannerViewController.swift in Sources */,
+				2D1C6FCD25E4D4A10079BB17 /* HomeViewController.swift in Sources */,
 				2D1C6FC925E4D4A10079BB17 /* AppDelegate.swift in Sources */,
 				2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */,
 			);
@@ -376,14 +411,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D1C701425E66DED0079BB17 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2D1C702025E66DED0079BB17 /* NotificationViewController.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -396,11 +423,6 @@
 			isa = PBXTargetDependency;
 			target = 2D1C6FC425E4D4A10079BB17 /* LeapDemoApp */;
 			targetProxy = 2D1C6FE725E4D4A40079BB17 /* PBXContainerItemProxy */;
-		};
-		2D1C702625E66DED0079BB17 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2D1C701725E66DED0079BB17 /* Custom Notification Extension */;
-			targetProxy = 2D1C702525E66DED0079BB17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -419,14 +441,6 @@
 				2D1C6FD425E4D4A30079BB17 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		2D1C702125E66DED0079BB17 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2D1C702225E66DED0079BB17 /* Base */,
-			);
-			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -674,46 +688,6 @@
 			};
 			name = Release;
 		};
-		2D1C702925E66DED0079BB17 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZTR9S7UW64;
-				INFOPLIST_FILE = "Custom Notification Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leap.LeapSampleApp.Custom-Notification-Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		2D1C702A25E66DED0079BB17 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ZTR9S7UW64;
-				INFOPLIST_FILE = "Custom Notification Extension/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leap.LeapSampleApp.Custom-Notification-Extension";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -749,15 +723,6 @@
 			buildConfigurations = (
 				2D1C6FF625E4D4A40079BB17 /* Debug */,
 				2D1C6FF725E4D4A40079BB17 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2D1C702825E66DED0079BB17 /* Build configuration list for PBXNativeTarget "Custom Notification Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2D1C702925E66DED0079BB17 /* Debug */,
-				2D1C702A25E66DED0079BB17 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
