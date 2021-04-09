@@ -14,6 +14,7 @@ import LeapAUISDK
 class HomeViewController: UIViewController {
     
     var leapCameraViewController: UIViewController?
+    var reload:Bool = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,8 +25,10 @@ class HomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        guard reload else { return }
+        reload = false
         leapCameraViewController = LeapCreator.shared.openSampleApp(delegate: self)
-
+        leapCameraViewController?.modalPresentationStyle = .fullScreen
         self.navigationController?.present(leapCameraViewController!, animated: true, completion: nil)
     }
 
@@ -44,7 +47,6 @@ class HomeViewController: UIViewController {
         if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP", let apiKey = infoDict["apiKey"] as? String {
             
            leapCameraViewController?.dismiss(animated: true, completion: nil)
-            
            UserDefaults.standard.setValue(infoDict, forKey: "infoDict")
             
             LeapAUI.shared.buildWith(apiKey: apiKey)
@@ -52,8 +54,8 @@ class HomeViewController: UIViewController {
             .addProperty("age", intValue: 30)
             .addProperty("ts", dateValue: Date()).start()
             LeapCreator.shared.initialize(withToken: apiKey)
-                    
            performSegue(withIdentifier: "webpage", sender: infoDict)
+            reload = true
         
         } else {
             
