@@ -50,7 +50,9 @@ class WKWebViewController: UIViewController {
     @objc func pop() {
         
         self.navigationController?.viewControllers.first?.view.isHidden = false
-        
+        if let homeViewController = self.navigationController?.viewControllers.first as? HomeViewController {
+              homeViewController.reload = true
+            }
         LeapAUI.shared.disable()
         
         self.navigationController?.popViewController(animated: true)

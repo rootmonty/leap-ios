@@ -55,7 +55,6 @@ class HomeViewController: UIViewController {
             .addProperty("ts", dateValue: Date()).start()
             LeapCreator.shared.initialize(withToken: apiKey)
            performSegue(withIdentifier: "webpage", sender: infoDict)
-            reload = true
         
         } else {
             
