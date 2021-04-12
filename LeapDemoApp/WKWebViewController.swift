@@ -9,24 +9,26 @@ import UIKit
 import WebKit
 import LeapAUISDK
 import LeapCoreSDK
+import LeapCreatorSDK
 
 class WKWebViewController: UIViewController {
     
     var wkWebView: WKWebView?
     
+    var leapCameraViewController: UIViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.modalPresentationStyle = .fullScreen
         /// configuration property for webview of type WKWebViewConfiguration.
         let configuration = WKWebViewConfiguration()
         self.wkWebView = WKWebView(frame: .zero, configuration: configuration)
         self.view.addSubview(wkWebView!)
         configureWebView()
-        if let infoDict = (UserDefaults.standard.object(forKey: "infoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {
-           wkWebView?.load(URLRequest(url: URL(string: url)!))
-        }
         
-        NotificationCenter.default.addObserver(self, selector: #selector(pop), name: .init("rescan"), object: nil)
+        openCameraViewController(isRescan: false)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(push), name: .init("rescan"), object: nil)
     }
     
     func configureWebView() {
@@ -42,19 +44,58 @@ class WKWebViewController: UIViewController {
         self.view.addConstraint(NSLayoutConstraint(item: wkWebView!, attribute: .height, relatedBy: .equal, toItem: view, attribute: .height, multiplier: 1, constant: 0))
     }
     
+    func openCameraViewController(isRescan: Bool) {
+        
+        UserDefaults.standard.setValue(isRescan, forKey: "sampleAppRescan")
+        leapCameraViewController = LeapCreator.shared.openSampleApp(delegate: self)
+        leapCameraViewController?.modalPresentationStyle = .fullScreen
+        DispatchQueue.main.async {
+           self.present(self.leapCameraViewController!, animated: true, completion: nil)
+        }
+    }
+    
+    func found(infoDict: Dictionary<String, Any?>) {
+        
+        if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP", let apiKey = infoDict["apiKey"] as? String {
+            
+           leapCameraViewController?.dismiss(animated: true, completion: nil)
+            
+           UserDefaults.standard.setValue(infoDict, forKey: "sampleAppInfoDict")
+            
+           LeapAUI.shared.buildWith(apiKey: apiKey)
+           .addProperty("username", stringValue: "Aravind")
+           .addProperty("age", intValue: 30)
+           .addProperty("ts", dateValue: Date()).start()
+           LeapCreator.shared.initialize(withToken: apiKey)
+            
+           if let infoDict = (UserDefaults.standard.object(forKey: "sampleAppInfoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {
+               wkWebView?.load(URLRequest(url: URL(string: url)!))
+           }
+           
+        } else {
+            
+            let wrongQRAlert = UIAlertController(title: "QR not matched", message: "Please scan a QR for an iOS App", preferredStyle: .alert)
+            wrongQRAlert.addAction(UIAlertAction(title: "OK", style: .default))
+            present(wrongQRAlert, animated: true)
+        }
+    }
     
     override var prefersStatusBarHidden: Bool {
         return true
     }
     
-    @objc func pop() {
+    @objc func push() {
         
-        self.navigationController?.viewControllers.first?.view.isHidden = false
-        if let homeViewController = self.navigationController?.viewControllers.first as? HomeViewController {
-              homeViewController.reload = true
-            }
+        openCameraViewController(isRescan: true)
+            
         LeapAUI.shared.disable()
-        
-        self.navigationController?.popViewController(animated: true)
+    }
+}
+
+extension WKWebViewController: SampleAppDelegate {
+    func sendInfo(infoDict: Dictionary<String, Any>) {
+        DispatchQueue.main.async {
+           self.found(infoDict: infoDict)
+        }
     }
 }
