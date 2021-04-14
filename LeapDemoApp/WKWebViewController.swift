@@ -7,7 +7,7 @@
 
 import UIKit
 import WebKit
-import LeapAUISDK
+import LeapSDK
 import LeapCoreSDK
 import LeapCreatorSDK
 
@@ -62,11 +62,11 @@ class WKWebViewController: UIViewController {
             
            UserDefaults.standard.setValue(infoDict, forKey: "sampleAppInfoDict")
             
-           LeapAUI.shared.buildWith(apiKey: apiKey)
+           Leap.shared.withBuilder(apiKey)?
            .addProperty("username", stringValue: "Aravind")
            .addProperty("age", intValue: 30)
            .addProperty("ts", dateValue: Date()).start()
-           LeapCreator.shared.initialize(withToken: apiKey)
+           LeapCreator.shared.start(apiKey)
             
            if let infoDict = (UserDefaults.standard.object(forKey: "sampleAppInfoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {
                wkWebView?.load(URLRequest(url: URL(string: url)!))
@@ -88,7 +88,7 @@ class WKWebViewController: UIViewController {
         
         openCameraViewController(isRescan: true)
             
-        LeapAUI.shared.disable()
+        Leap.shared.disable()
     }
 }
 
