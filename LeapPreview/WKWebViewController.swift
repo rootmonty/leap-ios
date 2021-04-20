@@ -1,6 +1,6 @@
 //
 //  WKWebViewController.swift
-//  LeapDemoApp
+//  LeapPreview
 //
 //  Created by Ajay S on 23/02/21.
 //
@@ -48,6 +48,7 @@ class WKWebViewController: UIViewController {
         
         UserDefaults.standard.setValue(isRescan, forKey: "sampleAppRescan")
         leapCameraViewController = LeapCreator.shared.openSampleApp(delegate: self)
+        guard leapCameraViewController != nil else { return }
         leapCameraViewController?.modalPresentationStyle = .fullScreen
         DispatchQueue.main.async {
            self.present(self.leapCameraViewController!, animated: true, completion: nil)
@@ -62,10 +63,7 @@ class WKWebViewController: UIViewController {
             
            UserDefaults.standard.setValue(infoDict, forKey: "sampleAppInfoDict")
             
-           Leap.shared.withBuilder(apiKey)?
-           .addProperty("username", stringValue: "Aravind")
-           .addProperty("age", intValue: 30)
-           .addProperty("ts", dateValue: Date()).start()
+           Leap.shared.start(apiKey)
            LeapCreator.shared.start(apiKey)
             
            if let infoDict = (UserDefaults.standard.object(forKey: "sampleAppInfoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {

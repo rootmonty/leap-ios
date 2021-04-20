@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  LeapDemoApp
+//  LeapPreview
 //
 //  Created by Ajay S on 23/02/21.
 //
