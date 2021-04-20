@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D1B7F9B262F06BD0050E2EF /* LeapCoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */; };
-		2D1B7F9C262F06BD0050E2EF /* LeapCoreSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D1B7F9D262F06BD0050E2EF /* LeapCreatorSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */; };
-		2D1B7F9E262F06BD0050E2EF /* LeapCreatorSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D1B7F9F262F06BD0050E2EF /* LeapSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */; };
-		2D1B7FA0262F06BD0050E2EF /* LeapSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2D1B7FA9262F07230050E2EF /* Gzip in Frameworks */ = {isa = PBXBuildFile; productRef = 2D1B7FA8262F07230050E2EF /* Gzip */; };
 		2D1B7FAE262F07420050E2EF /* Starscream in Frameworks */ = {isa = PBXBuildFile; productRef = 2D1B7FAD262F07420050E2EF /* Starscream */; };
 		2D1C6FC925E4D4A10079BB17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FC825E4D4A10079BB17 /* AppDelegate.swift */; };
@@ -22,6 +16,12 @@
 		2D1C6FE025E4D4A40079BB17 /* LeapPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FDF25E4D4A40079BB17 /* LeapPreviewTests.swift */; };
 		2D1C6FEB25E4D4A40079BB17 /* LeapPreviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FEA25E4D4A40079BB17 /* LeapPreviewUITests.swift */; };
 		2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */; };
+		2D501FCC262F2720009822C2 /* LeapCoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */; };
+		2D501FCD262F2720009822C2 /* LeapCoreSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D501FCE262F2720009822C2 /* LeapCreatorSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */; };
+		2D501FCF262F2720009822C2 /* LeapCreatorSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D501FD0262F2720009822C2 /* LeapSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */; };
+		2D501FD1262F2720009822C2 /* LeapSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +52,15 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2DD2874D261E10E200BCA210 /* Embed Frameworks */ = {
+		2D501FD2262F2721009822C2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2D1B7F9C262F06BD0050E2EF /* LeapCoreSDK.xcframework in Embed Frameworks */,
-				2D1B7FA0262F06BD0050E2EF /* LeapSDK.xcframework in Embed Frameworks */,
-				2D1B7F9E262F06BD0050E2EF /* LeapCreatorSDK.xcframework in Embed Frameworks */,
+				2D501FCD262F2720009822C2 /* LeapCoreSDK.xcframework in Embed Frameworks */,
+				2D501FD1262F2720009822C2 /* LeapSDK.xcframework in Embed Frameworks */,
+				2D501FCF262F2720009822C2 /* LeapCreatorSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -93,11 +93,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D1B7F9B262F06BD0050E2EF /* LeapCoreSDK.xcframework in Frameworks */,
-				2D1B7F9F262F06BD0050E2EF /* LeapSDK.xcframework in Frameworks */,
 				2D1B7FA9262F07230050E2EF /* Gzip in Frameworks */,
+				2D501FCE262F2720009822C2 /* LeapCreatorSDK.xcframework in Frameworks */,
+				2D501FD0262F2720009822C2 /* LeapSDK.xcframework in Frameworks */,
+				2D501FCC262F2720009822C2 /* LeapCoreSDK.xcframework in Frameworks */,
 				2D1B7FAE262F07420050E2EF /* Starscream in Frameworks */,
-				2D1B7F9D262F06BD0050E2EF /* LeapCreatorSDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +193,7 @@
 				2D1C6FC225E4D4A10079BB17 /* Frameworks */,
 				2D1C6FC325E4D4A10079BB17 /* Resources */,
 				2D1C702B25E66DED0079BB17 /* Embed App Extensions */,
-				2DD2874D261E10E200BCA210 /* Embed Frameworks */,
+				2D501FD2262F2721009822C2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -497,7 +497,6 @@
 		2D1C6FF025E4D4A40079BB17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -517,7 +516,6 @@
 		2D1C6FF125E4D4A40079BB17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
