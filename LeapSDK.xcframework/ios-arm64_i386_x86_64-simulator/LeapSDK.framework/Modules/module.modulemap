@@ -1,0 +1,4 @@
+framework module LeapSDK {
+  header "LeapSDK-Swift.h"
+  requires objc
+}
