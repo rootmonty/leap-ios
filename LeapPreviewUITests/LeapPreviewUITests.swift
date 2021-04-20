@@ -1,13 +1,13 @@
 //
-//  LeapDemoAppUITests.swift
-//  LeapDemoAppUITests
+//  LeapPreviewUITests.swift
+//  LeapPreviewUITests
 //
 //  Created by Ajay S on 23/02/21.
 //
 
 import XCTest
 
-class LeapDemoAppUITests: XCTestCase {
+class LeapPreviewUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
