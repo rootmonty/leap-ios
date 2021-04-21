@@ -16,12 +16,12 @@
 		2D1C6FE025E4D4A40079BB17 /* LeapPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FDF25E4D4A40079BB17 /* LeapPreviewTests.swift */; };
 		2D1C6FEB25E4D4A40079BB17 /* LeapPreviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FEA25E4D4A40079BB17 /* LeapPreviewUITests.swift */; };
 		2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */; };
-		2D501FCC262F2720009822C2 /* LeapCoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */; };
-		2D501FCD262F2720009822C2 /* LeapCoreSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D501FCE262F2720009822C2 /* LeapCreatorSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */; };
-		2D501FCF262F2720009822C2 /* LeapCreatorSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2D501FD0262F2720009822C2 /* LeapSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */; };
-		2D501FD1262F2720009822C2 /* LeapSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D501FED263033E9009822C2 /* LeapCoreSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */; };
+		2D501FEE263033E9009822C2 /* LeapCoreSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D501FEF263033E9009822C2 /* LeapCreatorSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */; };
+		2D501FF0263033EA009822C2 /* LeapCreatorSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2D501FF1263033EA009822C2 /* LeapSDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */; };
+		2D501FF2263033EA009822C2 /* LeapSDK.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,15 +52,15 @@
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2D501FD2262F2721009822C2 /* Embed Frameworks */ = {
+		2D501FF3263033EA009822C2 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2D501FCD262F2720009822C2 /* LeapCoreSDK.xcframework in Embed Frameworks */,
-				2D501FD1262F2720009822C2 /* LeapSDK.xcframework in Embed Frameworks */,
-				2D501FCF262F2720009822C2 /* LeapCreatorSDK.xcframework in Embed Frameworks */,
+				2D501FEE263033E9009822C2 /* LeapCoreSDK.xcframework in Embed Frameworks */,
+				2D501FF2263033EA009822C2 /* LeapSDK.xcframework in Embed Frameworks */,
+				2D501FF0263033EA009822C2 /* LeapCreatorSDK.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -71,7 +71,7 @@
 		2D1B7F98262F06BC0050E2EF /* LeapCoreSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LeapCoreSDK.xcframework; sourceTree = "<group>"; };
 		2D1B7F99262F06BD0050E2EF /* LeapCreatorSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LeapCreatorSDK.xcframework; sourceTree = "<group>"; };
 		2D1B7F9A262F06BD0050E2EF /* LeapSDK.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = LeapSDK.xcframework; sourceTree = "<group>"; };
-		2D1C6FC525E4D4A10079BB17 /* LeapPreview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeapPreview.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1C6FC525E4D4A10079BB17 /* Leap Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leap Preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1C6FC825E4D4A10079BB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D1C6FCF25E4D4A10079BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,9 +94,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1B7FA9262F07230050E2EF /* Gzip in Frameworks */,
-				2D501FCE262F2720009822C2 /* LeapCreatorSDK.xcframework in Frameworks */,
-				2D501FD0262F2720009822C2 /* LeapSDK.xcframework in Frameworks */,
-				2D501FCC262F2720009822C2 /* LeapCoreSDK.xcframework in Frameworks */,
+				2D501FEF263033E9009822C2 /* LeapCreatorSDK.xcframework in Frameworks */,
+				2D501FF1263033EA009822C2 /* LeapSDK.xcframework in Frameworks */,
+				2D501FED263033E9009822C2 /* LeapCoreSDK.xcframework in Frameworks */,
 				2D1B7FAE262F07420050E2EF /* Starscream in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,7 +132,7 @@
 		2D1C6FC625E4D4A10079BB17 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D1C6FC525E4D4A10079BB17 /* LeapPreview.app */,
+				2D1C6FC525E4D4A10079BB17 /* Leap Preview.app */,
 				2D1C6FDB25E4D4A40079BB17 /* LeapPreviewTests.xctest */,
 				2D1C6FE625E4D4A40079BB17 /* LeapPreviewUITests.xctest */,
 			);
@@ -185,27 +185,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D1C6FC425E4D4A10079BB17 /* LeapPreview */ = {
+		2D1C6FC425E4D4A10079BB17 /* Leap Preview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D1C6FEF25E4D4A40079BB17 /* Build configuration list for PBXNativeTarget "LeapPreview" */;
+			buildConfigurationList = 2D1C6FEF25E4D4A40079BB17 /* Build configuration list for PBXNativeTarget "Leap Preview" */;
 			buildPhases = (
 				2D1C6FC125E4D4A10079BB17 /* Sources */,
 				2D1C6FC225E4D4A10079BB17 /* Frameworks */,
 				2D1C6FC325E4D4A10079BB17 /* Resources */,
 				2D1C702B25E66DED0079BB17 /* Embed App Extensions */,
-				2D501FD2262F2721009822C2 /* Embed Frameworks */,
+				2D501FF3263033EA009822C2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LeapPreview;
+			name = "Leap Preview";
 			packageProductDependencies = (
 				2D1B7FA8262F07230050E2EF /* Gzip */,
 				2D1B7FAD262F07420050E2EF /* Starscream */,
 			);
 			productName = LeapDemoApp;
-			productReference = 2D1C6FC525E4D4A10079BB17 /* LeapPreview.app */;
+			productReference = 2D1C6FC525E4D4A10079BB17 /* Leap Preview.app */;
 			productType = "com.apple.product-type.application";
 		};
 		2D1C6FDA25E4D4A40079BB17 /* LeapPreviewTests */ = {
@@ -283,7 +283,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D1C6FC425E4D4A10079BB17 /* LeapPreview */,
+				2D1C6FC425E4D4A10079BB17 /* Leap Preview */,
 				2D1C6FDA25E4D4A40079BB17 /* LeapPreviewTests */,
 				2D1C6FE525E4D4A40079BB17 /* LeapPreviewUITests */,
 			);
@@ -348,12 +348,12 @@
 /* Begin PBXTargetDependency section */
 		2D1C6FDD25E4D4A40079BB17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D1C6FC425E4D4A10079BB17 /* LeapPreview */;
+			target = 2D1C6FC425E4D4A10079BB17 /* Leap Preview */;
 			targetProxy = 2D1C6FDC25E4D4A40079BB17 /* PBXContainerItemProxy */;
 		};
 		2D1C6FE825E4D4A40079BB17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D1C6FC425E4D4A10079BB17 /* LeapPreview */;
+			target = 2D1C6FC425E4D4A10079BB17 /* Leap Preview */;
 			targetProxy = 2D1C6FE725E4D4A40079BB17 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -436,6 +436,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -490,6 +491,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -506,10 +508,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leap.LeapPreview;
+				PRODUCT_BUNDLE_IDENTIFIER = is.leap.LeapPreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -525,10 +527,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leap.LeapPreview;
+				PRODUCT_BUNDLE_IDENTIFIER = is.leap.LeapPreview;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -537,6 +539,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZTR9S7UW64;
 				INFOPLIST_FILE = LeapPreviewTests/Info.plist;
@@ -546,7 +549,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leap.LeapPreviewTests;
+				PRODUCT_BUNDLE_IDENTIFIER = is.leap.LeapPreviewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -559,6 +562,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZTR9S7UW64;
 				INFOPLIST_FILE = LeapPreviewTests/Info.plist;
@@ -568,7 +572,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leap.LeapPreviewTests;
+				PRODUCT_BUNDLE_IDENTIFIER = is.leap.LeapPreviewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -589,7 +593,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leap.LeapPreviewUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = is.leap.LeapPreviewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -610,7 +614,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.leap.LeapPreviewUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = is.leap.LeapPreviewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -630,7 +634,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D1C6FEF25E4D4A40079BB17 /* Build configuration list for PBXNativeTarget "LeapPreview" */ = {
+		2D1C6FEF25E4D4A40079BB17 /* Build configuration list for PBXNativeTarget "Leap Preview" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D1C6FF025E4D4A40079BB17 /* Debug */,
