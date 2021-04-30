@@ -1,16 +1,16 @@
 PODS:
   - GzipSwift (5.1.1)
-  - LeapCoreSDK (1.0.0-alpha3):
+  - LeapCoreSDK (0.0.1):
     - GzipSwift (~> 5.1.1)
-  - LeapCreatorSDK (1.0.0-alpha3):
+  - LeapCreatorSDK (0.0.1):
     - Starscream (~> 4.0.0)
-  - LeapSDK (1.0.0-alpha3):
-    - LeapCoreSDK (= 1.0.0-alpha3)
+  - LeapSDK (0.0.1):
+    - LeapCoreSDK (= 0.0.1)
   - Starscream (4.0.4)
 
 DEPENDENCIES:
-  - LeapCreatorSDK (~> 1.0.0-alpha1)
-  - LeapSDK (~> 1.0.0-alpha1)
+  - LeapCreatorSDK (~> 0.0.1)
+  - LeapSDK (~> 0.0.1)
 
 SPEC REPOS:
   trunk:
@@ -22,11 +22,11 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   GzipSwift: 893f3e48e597a1a4f62fafcb6514220fcf8287fa
-  LeapCoreSDK: 6a2b583eae0cbc3bc518d5b822910ee6360aee3d
-  LeapCreatorSDK: 1f5caafd1f2258815161471fd20782a37b1a4904
-  LeapSDK: 56549844473f68350795d416c544beae421bea56
+  LeapCoreSDK: 4150fbac2c4e5c64692ff51ca7b6b07a077f249b
+  LeapCreatorSDK: a6d2922cb12b851913f15e9304d7ef453c0a39e0
+  LeapSDK: 05d23c1d62e1467b12ae0a0c30c17355501993a8
   Starscream: 5178aed56b316f13fa3bc55694e583d35dd414d9
 
-PODFILE CHECKSUM: 792184a9e8240465a827fd25a18978b875dd6bdb
+PODFILE CHECKSUM: 9a80569e398719e14a6cefb5c06a42c356fed642
 
 COCOAPODS: 1.10.1

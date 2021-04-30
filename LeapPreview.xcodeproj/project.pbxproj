@@ -14,7 +14,7 @@
 		2D1C6FE025E4D4A40079BB17 /* LeapPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FDF25E4D4A40079BB17 /* LeapPreviewTests.swift */; };
 		2D1C6FEB25E4D4A40079BB17 /* LeapPreviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FEA25E4D4A40079BB17 /* LeapPreviewUITests.swift */; };
 		2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */; };
-		BDE3A21A40BA67D04F227560 /* Pods_Leap_Preview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BF5F80C14DCBA6E0E64B7B /* Pods_Leap_Preview.framework */; };
+		EB537E5083F23B40F266F319 /* Pods_Leap_Preview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E840E364D76E68726799EF54 /* Pods_Leap_Preview.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		01AF3911A59F5D6C79A9C2F1 /* Pods-Leap Preview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leap Preview.debug.xcconfig"; path = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.debug.xcconfig"; sourceTree = "<group>"; };
+		202511B8CA4EBE0C9CA1B298 /* Pods-Leap Preview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leap Preview.debug.xcconfig"; path = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.debug.xcconfig"; sourceTree = "<group>"; };
 		2D1C6FC525E4D4A10079BB17 /* Leap Preview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Leap Preview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D1C6FC825E4D4A10079BB17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2D1C6FCF25E4D4A10079BB17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,8 +64,8 @@
 		2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		2D1C701A25E66DED0079BB17 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		2D1C701C25E66DED0079BB17 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
-		576950DCD80F38F19635730D /* Pods-Leap Preview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leap Preview.release.xcconfig"; path = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.release.xcconfig"; sourceTree = "<group>"; };
-		C3BF5F80C14DCBA6E0E64B7B /* Pods_Leap_Preview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leap_Preview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E64F084D60FF373BA932B775 /* Pods-Leap Preview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leap Preview.release.xcconfig"; path = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.release.xcconfig"; sourceTree = "<group>"; };
+		E840E364D76E68726799EF54 /* Pods_Leap_Preview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leap_Preview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE3A21A40BA67D04F227560 /* Pods_Leap_Preview.framework in Frameworks */,
+				EB537E5083F23B40F266F319 /* Pods_Leap_Preview.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +152,7 @@
 			children = (
 				2D1C701A25E66DED0079BB17 /* UserNotifications.framework */,
 				2D1C701C25E66DED0079BB17 /* UserNotificationsUI.framework */,
-				C3BF5F80C14DCBA6E0E64B7B /* Pods_Leap_Preview.framework */,
+				E840E364D76E68726799EF54 /* Pods_Leap_Preview.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -160,8 +160,8 @@
 		98F19D6A4EEFACCF851C717F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				01AF3911A59F5D6C79A9C2F1 /* Pods-Leap Preview.debug.xcconfig */,
-				576950DCD80F38F19635730D /* Pods-Leap Preview.release.xcconfig */,
+				202511B8CA4EBE0C9CA1B298 /* Pods-Leap Preview.debug.xcconfig */,
+				E64F084D60FF373BA932B775 /* Pods-Leap Preview.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -173,12 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D1C6FEF25E4D4A40079BB17 /* Build configuration list for PBXNativeTarget "Leap Preview" */;
 			buildPhases = (
-				5FBAE7C7BDA30D6F0508D509 /* [CP] Check Pods Manifest.lock */,
+				9CB2C1F6FDEB9C22D72F7E53 /* [CP] Check Pods Manifest.lock */,
 				2D1C6FC125E4D4A10079BB17 /* Sources */,
 				2D1C6FC225E4D4A10079BB17 /* Frameworks */,
 				2D1C6FC325E4D4A10079BB17 /* Resources */,
 				2D1C702B25E66DED0079BB17 /* Embed App Extensions */,
-				C62A3E5E39D88924E14FC193 /* [CP] Embed Pods Frameworks */,
+				F01A0CA370CCC5368CE74633 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -295,7 +295,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5FBAE7C7BDA30D6F0508D509 /* [CP] Check Pods Manifest.lock */ = {
+		9CB2C1F6FDEB9C22D72F7E53 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -317,7 +317,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C62A3E5E39D88924E14FC193 /* [CP] Embed Pods Frameworks */ = {
+		F01A0CA370CCC5368CE74633 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -517,7 +517,7 @@
 		};
 		2D1C6FF025E4D4A40079BB17 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01AF3911A59F5D6C79A9C2F1 /* Pods-Leap Preview.debug.xcconfig */;
+			baseConfigurationReference = 202511B8CA4EBE0C9CA1B298 /* Pods-Leap Preview.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -539,7 +539,7 @@
 		};
 		2D1C6FF125E4D4A40079BB17 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 576950DCD80F38F19635730D /* Pods-Leap Preview.release.xcconfig */;
+			baseConfigurationReference = E64F084D60FF373BA932B775 /* Pods-Leap Preview.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
