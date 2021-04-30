@@ -1,0 +1,1273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		855462ABEAD0DCE4F2927F4F332FEEBC /* LeapCoreSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8CBC686FB73E8B3F28606582A4415C64 /* Build configuration list for PBXAggregateTarget "LeapCoreSDK" */;
+			buildPhases = (
+				9667962A992764F500BEB8AA57AC2820 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				42A6B29D58FBD1906D564F999AC415A2 /* PBXTargetDependency */,
+			);
+			name = LeapCoreSDK;
+		};
+		9B2ACDBB8AB13C19964A954662941DBD /* LeapCreatorSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 85C2A394025A7D8DE48E61B1AB22642B /* Build configuration list for PBXAggregateTarget "LeapCreatorSDK" */;
+			buildPhases = (
+				504F21A87D685A617B729C10D4A1268F /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				CA8FAAC0990C59D7B8CED841A035A66D /* PBXTargetDependency */,
+			);
+			name = LeapCreatorSDK;
+		};
+		B70C00BBD64A0C47DA5DB030D9C24FE2 /* LeapSDK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5DA29CD56A8C4D0CB4408ED4ABF469E9 /* Build configuration list for PBXAggregateTarget "LeapSDK" */;
+			buildPhases = (
+				88800F54C4A3A94F81E65386815FBC3D /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+				CB85EFDEE7D4475CE379269FFDD6EE40 /* PBXTargetDependency */,
+			);
+			name = LeapSDK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0798C6BB0C582DFD3EBC05A7DA8E01FE /* GzipSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73A7AE421BFB4D7549C8ACDADDDBB160 /* GzipSwift-dummy.m */; };
+		0909F010EAC3531A30D2B417592F47A5 /* StringHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F184975E3C99404EEE0107D2D3D334B /* StringHTTPHandler.swift */; };
+		12F91B2A3E7383B84924B45CEA86C482 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		12FB526005B464FA51CC221BD63A693C /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C860C820395E2E4C575A6714D53F87 /* WebSocket.swift */; };
+		23C43D95C8E672B050E90722DC08FEBD /* Security.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41275C6529439AF1BA6C9137A42801 /* Security.swift */; };
+		501130F6C1CAFCED4597FFDBAE077DF1 /* Transport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75BDF4305696B9F1D807F3CEAE8C82F /* Transport.swift */; };
+		5193E1092A8477B576F438D892F3BECD /* FoundationTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26BA04964F41620C2B2D3F189C5C29CA /* FoundationTransport.swift */; };
+		58539BE15781AB9CC82B6AAF1E27F7C2 /* WebSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C183E6E2A77A77FBF9C4679F2A7D50E /* WebSocketServer.swift */; };
+		5FAEF225C11FC49A148595C8532EE6BE /* FoundationSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 552556E90B6E98A62F6C82068DC5FC3B /* FoundationSecurity.swift */; };
+		6E1E3578051AD96EA961F3DABAB298EE /* FrameCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892135981F697D99A16B9C7B88F4666C /* FrameCollector.swift */; };
+		793850CE1DD83A755AC1B7B12E484424 /* FoundationHTTPServerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60E808ADA193AE12C07E8CBA177719E /* FoundationHTTPServerHandler.swift */; };
+		7F7769634CDD0D97E251CA312614617C /* Pods-Leap Preview-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F59F846E7DDC95B5812FA4484206D18 /* Pods-Leap Preview-dummy.m */; };
+		81E9D728A480241FC687CF38AA0D2393 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		82BF616114698FB6DB52D433B1C9B580 /* Compression.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0CEABE0ECCA8043AFC950DB604B766 /* Compression.swift */; };
+		87E463F260D9A8F5E21AC0B1F1730D7F /* Pods-Leap Preview-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FCDB2483E3E675F9B674309DA16202 /* Pods-Leap Preview-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		886FF7A2DEAC80CEC9632D97718DDE4D /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF92CA1BD6D05F7B2BD2E3C598363A40 /* Engine.swift */; };
+		8BE5037A608A8AF29DF474430EA6AD7F /* HTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580582645BA53A5FCBC4F998C96EFFCB /* HTTPHandler.swift */; };
+		95EAF924C1AE943DB4B560BED4F54547 /* NativeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33955E651F21076D02C21A0F0FA2257 /* NativeEngine.swift */; };
+		9ED01F74690A44257CDCC24219F1436C /* Starscream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26C7B985038248506E2A16DD58D0D5B3 /* Starscream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F27E3E5142F2EED77CB6BE0D29F067B /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7710304B836BF5758A20893D022AF2EB /* Server.swift */; };
+		AA22E255BF14965862F9C20F337736C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		AE60E80D355466904F1FDAE558DD3BD5 /* GzipSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C7B71DA28ADD09293873183371DDF008 /* GzipSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC2243574B0C9085D6F5DD43C9BE665F /* FoundationHTTPHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C080E20B7FA5162E311AD9708A67CF2 /* FoundationHTTPHandler.swift */; };
+		CCAA615313D4845C4F83AE743F25E24B /* WSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5212846DB3C87B989B25E401DFFBE6FD /* WSEngine.swift */; };
+		D96C844A2DC0C2E38247A953D0FD97DF /* Data+Gzip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66C7A885A24A0038302AB9A9DB60EBE9 /* Data+Gzip.swift */; };
+		EEC03018A1A4271C71927A80AE61D8AD /* TCPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F051EA88E36E992FAA5A21D6B4885610 /* TCPTransport.swift */; };
+		F9E5365065C11F9C0B1E4C3F04A46F77 /* Framer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B54B3019A4FEBFB442767275BA6AB2 /* Framer.swift */; };
+		FC36C84EDFF84873524597556F0D3F51 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842AD712DF4367440989364740769818 /* Data+Extensions.swift */; };
+		FE96C495BB7155BB2F1A8F9C71EEAA43 /* Starscream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16DFA9709480B770DDC201B4898DBA8F /* Starscream-dummy.m */; };
+		FF157598B98720646709DF75BD8406BF /* WSCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF5270433285C82112FF1872A23E9B2 /* WSCompression.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1652F5DC58A644E95DE8BD82E63C4F0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B2ACDBB8AB13C19964A954662941DBD;
+			remoteInfo = LeapCreatorSDK;
+		};
+		383679207269D698855452485718D557 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8868051ECB7CB2E1A56270E3A6281973;
+			remoteInfo = GzipSwift;
+		};
+		457DF771E53CB6FBD93C9E9A5D93A220 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8868051ECB7CB2E1A56270E3A6281973;
+			remoteInfo = GzipSwift;
+		};
+		5C6FBDF7A037CC4B2A745A30E3B4ADF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+		5D0E954F56D2985E6DCD30D34CFD95E7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855462ABEAD0DCE4F2927F4F332FEEBC;
+			remoteInfo = LeapCoreSDK;
+		};
+		6B730905AB88EE6CAEBDCAB21F48693F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 855462ABEAD0DCE4F2927F4F332FEEBC;
+			remoteInfo = LeapCoreSDK;
+		};
+		D5CB105B531BF996B0F11ABD5EECAE82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B70C00BBD64A0C47DA5DB030D9C24FE2;
+			remoteInfo = LeapSDK;
+		};
+		E4E757942021FA24879F7B9489015AC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9B78EE4AF6AE03E79D88886319853FF7;
+			remoteInfo = Starscream;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00C9249EF67397BC460DE1A28D34089A /* LeapSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapSDK.release.xcconfig; sourceTree = "<group>"; };
+		047D4200F4283F467D6518D930B61AB0 /* LeapCreatorSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapCreatorSDK.release.xcconfig; sourceTree = "<group>"; };
+		0E7C85528C659AB9115CEB2E64E44C9B /* Pods_Leap_Preview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Leap_Preview.framework; path = "Pods-Leap Preview.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		144D90AC44A6AE9000AE71A58E7D6234 /* Gzip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Gzip.framework; path = GzipSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16DFA9709480B770DDC201B4898DBA8F /* Starscream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Starscream-dummy.m"; sourceTree = "<group>"; };
+		1F184975E3C99404EEE0107D2D3D334B /* StringHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StringHTTPHandler.swift; path = Sources/Framer/StringHTTPHandler.swift; sourceTree = "<group>"; };
+		1F5947EBBA9766E1968E69677F833184 /* LeapCoreSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = LeapCoreSDK.xcframework; sourceTree = "<group>"; };
+		234A82987EC630D796CCF6B333A701DB /* LeapCreatorSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapCreatorSDK.debug.xcconfig; sourceTree = "<group>"; };
+		26BA04964F41620C2B2D3F189C5C29CA /* FoundationTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationTransport.swift; path = Sources/Transport/FoundationTransport.swift; sourceTree = "<group>"; };
+		26C7B985038248506E2A16DD58D0D5B3 /* Starscream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-umbrella.h"; sourceTree = "<group>"; };
+		3022893568E5A753304B27DAC815E88F /* Starscream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Starscream-prefix.pch"; sourceTree = "<group>"; };
+		303E4259DE5A798BEB5AA6F49E4BA9A1 /* Starscream-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Starscream-Info.plist"; sourceTree = "<group>"; };
+		3211EDD8CF445F7F43DB8D7980ACE4C8 /* Pods-Leap Preview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Leap Preview.release.xcconfig"; sourceTree = "<group>"; };
+		3A469E02F5A26F93CFC52EC1ABB95E00 /* Pods-Leap Preview.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Leap Preview.modulemap"; sourceTree = "<group>"; };
+		3B831D97058972B99AC457E37B553130 /* GzipSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = GzipSwift.modulemap; sourceTree = "<group>"; };
+		3E5CCF53E4B49DD9B52A0DD61CD7E32A /* LeapCreatorSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "LeapCreatorSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		3F59F846E7DDC95B5812FA4484206D18 /* Pods-Leap Preview-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Leap Preview-dummy.m"; sourceTree = "<group>"; };
+		47590C14BF2F97F31EFA112F1FA806CF /* Pods-Leap Preview-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Leap Preview-Info.plist"; sourceTree = "<group>"; };
+		5212846DB3C87B989B25E401DFFBE6FD /* WSEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSEngine.swift; path = Sources/Engine/WSEngine.swift; sourceTree = "<group>"; };
+		552556E90B6E98A62F6C82068DC5FC3B /* FoundationSecurity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationSecurity.swift; path = Sources/Security/FoundationSecurity.swift; sourceTree = "<group>"; };
+		580582645BA53A5FCBC4F998C96EFFCB /* HTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHandler.swift; path = Sources/Framer/HTTPHandler.swift; sourceTree = "<group>"; };
+		588230F8BA3BD0F02A49FA651D3BE726 /* GzipSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "GzipSwift-Info.plist"; sourceTree = "<group>"; };
+		5B8399BCEDC56523C299E0A8690710E1 /* Starscream.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.release.xcconfig; sourceTree = "<group>"; };
+		5C4555FF5EE1E4F6A4F98C747CCF889A /* LeapCreatorSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = LeapCreatorSDK.xcframework; sourceTree = "<group>"; };
+		5F73E167C7BABF837B15D13447849884 /* GzipSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GzipSwift.debug.xcconfig; sourceTree = "<group>"; };
+		66C7A885A24A0038302AB9A9DB60EBE9 /* Data+Gzip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Gzip.swift"; path = "Sources/Gzip/Data+Gzip.swift"; sourceTree = "<group>"; };
+		6C183E6E2A77A77FBF9C4679F2A7D50E /* WebSocketServer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocketServer.swift; path = Sources/Server/WebSocketServer.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73A7AE421BFB4D7549C8ACDADDDBB160 /* GzipSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GzipSwift-dummy.m"; sourceTree = "<group>"; };
+		7710304B836BF5758A20893D022AF2EB /* Server.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Server.swift; path = Sources/Server/Server.swift; sourceTree = "<group>"; };
+		789B82E81B19EF8B1E8E21DC92F62491 /* GzipSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GzipSwift.release.xcconfig; sourceTree = "<group>"; };
+		7C080E20B7FA5162E311AD9708A67CF2 /* FoundationHTTPHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPHandler.swift; path = Sources/Framer/FoundationHTTPHandler.swift; sourceTree = "<group>"; };
+		842AD712DF4367440989364740769818 /* Data+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Data+Extensions.swift"; path = "Sources/DataBytes/Data+Extensions.swift"; sourceTree = "<group>"; };
+		88783791AC4496489CB616A868707D6E /* Pods-Leap Preview-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Leap Preview-acknowledgements.plist"; sourceTree = "<group>"; };
+		891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Starscream.framework; path = Starscream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		892135981F697D99A16B9C7B88F4666C /* FrameCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FrameCollector.swift; path = Sources/Framer/FrameCollector.swift; sourceTree = "<group>"; };
+		8D41275C6529439AF1BA6C9137A42801 /* Security.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Security.swift; path = Sources/Security/Security.swift; sourceTree = "<group>"; };
+		8EAF4CAB6844D045ACEA526A8365AC07 /* LeapCoreSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "LeapCoreSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		8FF5270433285C82112FF1872A23E9B2 /* WSCompression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WSCompression.swift; path = Sources/Compression/WSCompression.swift; sourceTree = "<group>"; };
+		9BDCB56C09BED6BFDA92ADF915D1A943 /* LeapCoreSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapCoreSDK.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A33955E651F21076D02C21A0F0FA2257 /* NativeEngine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NativeEngine.swift; path = Sources/Engine/NativeEngine.swift; sourceTree = "<group>"; };
+		A75BDF4305696B9F1D807F3CEAE8C82F /* Transport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Transport.swift; path = Sources/Transport/Transport.swift; sourceTree = "<group>"; };
+		A9B8E2F1ED54C8505B580BCE4386E575 /* LeapCoreSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapCoreSDK.debug.xcconfig; sourceTree = "<group>"; };
+		B092EFC19B17D604A6E83AEE2E2F5968 /* Starscream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Starscream.modulemap; sourceTree = "<group>"; };
+		B0FE240B0C7C06223FFFC471491A4AB8 /* Pods-Leap Preview-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Leap Preview-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BA744F3156C6AD3B9CAC593E9268FE77 /* LeapSDK.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; path = LeapSDK.xcframework; sourceTree = "<group>"; };
+		C2643AC56443649B69786EDE5721006B /* LeapSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapSDK.debug.xcconfig; sourceTree = "<group>"; };
+		C2BBF69348AA263B01B6C79AE6797462 /* Pods-Leap Preview-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Leap Preview-frameworks.sh"; sourceTree = "<group>"; };
+		C7B71DA28ADD09293873183371DDF008 /* GzipSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GzipSwift-umbrella.h"; sourceTree = "<group>"; };
+		CF92CA1BD6D05F7B2BD2E3C598363A40 /* Engine.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Engine.swift; path = Sources/Engine/Engine.swift; sourceTree = "<group>"; };
+		D6B54B3019A4FEBFB442767275BA6AB2 /* Framer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Framer.swift; path = Sources/Framer/Framer.swift; sourceTree = "<group>"; };
+		DC9583179603843C8FB1DE323D84ED81 /* LeapSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "LeapSDK-xcframeworks.sh"; sourceTree = "<group>"; };
+		E60E808ADA193AE12C07E8CBA177719E /* FoundationHTTPServerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FoundationHTTPServerHandler.swift; path = Sources/Framer/FoundationHTTPServerHandler.swift; sourceTree = "<group>"; };
+		E7FCDB2483E3E675F9B674309DA16202 /* Pods-Leap Preview-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Leap Preview-umbrella.h"; sourceTree = "<group>"; };
+		E818AFA576F65504ED0894F75C062C52 /* Starscream.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Starscream.debug.xcconfig; sourceTree = "<group>"; };
+		EA0CEABE0ECCA8043AFC950DB604B766 /* Compression.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compression.swift; path = Sources/Compression/Compression.swift; sourceTree = "<group>"; };
+		EFE0F3DD066599A6D280B3717D8BFC83 /* GzipSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GzipSwift-prefix.pch"; sourceTree = "<group>"; };
+		F051EA88E36E992FAA5A21D6B4885610 /* TCPTransport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPTransport.swift; path = Sources/Transport/TCPTransport.swift; sourceTree = "<group>"; };
+		F9C860C820395E2E4C575A6714D53F87 /* WebSocket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebSocket.swift; path = Sources/Starscream/WebSocket.swift; sourceTree = "<group>"; };
+		FBA12AD9993A69D6BE70C60C215AB53A /* Pods-Leap Preview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Leap Preview.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06E9113E989352F941FD0227DC1E8E7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12F91B2A3E7383B84924B45CEA86C482 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2382400F668649D69A3BF059E946BD75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81E9D728A480241FC687CF38AA0D2393 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5BCC0B169DAF1FC4912330E6FCFC58D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA22E255BF14965862F9C20F337736C4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BFF1BDBF710EC3E6B0AC141E0759800 /* GzipSwift */ = {
+			isa = PBXGroup;
+			children = (
+				66C7A885A24A0038302AB9A9DB60EBE9 /* Data+Gzip.swift */,
+				60A3DDD852F6F88CDEAE499CF8D442B8 /* Support Files */,
+			);
+			name = GzipSwift;
+			path = GzipSwift;
+			sourceTree = "<group>";
+		};
+		15F84C0A488FEB5D636584688CE3E7B0 /* LeapCoreSDK */ = {
+			isa = PBXGroup;
+			children = (
+				ED2A762C931ABF12798E854728E85296 /* Frameworks */,
+				D8DF0CB0E918DA9A7F21ABFEB690A8BF /* Support Files */,
+			);
+			name = LeapCoreSDK;
+			path = LeapCoreSDK;
+			sourceTree = "<group>";
+		};
+		18639E010C15F835E4375BB364D302EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				144D90AC44A6AE9000AE71A58E7D6234 /* Gzip.framework */,
+				0E7C85528C659AB9115CEB2E64E44C9B /* Pods_Leap_Preview.framework */,
+				891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21FB03384C4AB59D35099DAF23A640E1 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				22978F22600FAE506282F3AEFCFABEC4 /* Pods-Leap Preview */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		22978F22600FAE506282F3AEFCFABEC4 /* Pods-Leap Preview */ = {
+			isa = PBXGroup;
+			children = (
+				3A469E02F5A26F93CFC52EC1ABB95E00 /* Pods-Leap Preview.modulemap */,
+				B0FE240B0C7C06223FFFC471491A4AB8 /* Pods-Leap Preview-acknowledgements.markdown */,
+				88783791AC4496489CB616A868707D6E /* Pods-Leap Preview-acknowledgements.plist */,
+				3F59F846E7DDC95B5812FA4484206D18 /* Pods-Leap Preview-dummy.m */,
+				C2BBF69348AA263B01B6C79AE6797462 /* Pods-Leap Preview-frameworks.sh */,
+				47590C14BF2F97F31EFA112F1FA806CF /* Pods-Leap Preview-Info.plist */,
+				E7FCDB2483E3E675F9B674309DA16202 /* Pods-Leap Preview-umbrella.h */,
+				FBA12AD9993A69D6BE70C60C215AB53A /* Pods-Leap Preview.debug.xcconfig */,
+				3211EDD8CF445F7F43DB8D7980ACE4C8 /* Pods-Leap Preview.release.xcconfig */,
+			);
+			name = "Pods-Leap Preview";
+			path = "Target Support Files/Pods-Leap Preview";
+			sourceTree = "<group>";
+		};
+		292B50D60AE7286EBE0D94581344E28D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC9583179603843C8FB1DE323D84ED81 /* LeapSDK-xcframeworks.sh */,
+				C2643AC56443649B69786EDE5721006B /* LeapSDK.debug.xcconfig */,
+				00C9249EF67397BC460DE1A28D34089A /* LeapSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LeapSDK";
+			sourceTree = "<group>";
+		};
+		306B1FC4D5EFF29D5FE44A6B5CEBF3F9 /* Starscream */ = {
+			isa = PBXGroup;
+			children = (
+				EA0CEABE0ECCA8043AFC950DB604B766 /* Compression.swift */,
+				842AD712DF4367440989364740769818 /* Data+Extensions.swift */,
+				CF92CA1BD6D05F7B2BD2E3C598363A40 /* Engine.swift */,
+				7C080E20B7FA5162E311AD9708A67CF2 /* FoundationHTTPHandler.swift */,
+				E60E808ADA193AE12C07E8CBA177719E /* FoundationHTTPServerHandler.swift */,
+				552556E90B6E98A62F6C82068DC5FC3B /* FoundationSecurity.swift */,
+				26BA04964F41620C2B2D3F189C5C29CA /* FoundationTransport.swift */,
+				892135981F697D99A16B9C7B88F4666C /* FrameCollector.swift */,
+				D6B54B3019A4FEBFB442767275BA6AB2 /* Framer.swift */,
+				580582645BA53A5FCBC4F998C96EFFCB /* HTTPHandler.swift */,
+				A33955E651F21076D02C21A0F0FA2257 /* NativeEngine.swift */,
+				8D41275C6529439AF1BA6C9137A42801 /* Security.swift */,
+				7710304B836BF5758A20893D022AF2EB /* Server.swift */,
+				1F184975E3C99404EEE0107D2D3D334B /* StringHTTPHandler.swift */,
+				F051EA88E36E992FAA5A21D6B4885610 /* TCPTransport.swift */,
+				A75BDF4305696B9F1D807F3CEAE8C82F /* Transport.swift */,
+				F9C860C820395E2E4C575A6714D53F87 /* WebSocket.swift */,
+				6C183E6E2A77A77FBF9C4679F2A7D50E /* WebSocketServer.swift */,
+				8FF5270433285C82112FF1872A23E9B2 /* WSCompression.swift */,
+				5212846DB3C87B989B25E401DFFBE6FD /* WSEngine.swift */,
+				42EA2FC708BFA3F3D597E1006BAB15E2 /* Support Files */,
+			);
+			name = Starscream;
+			path = Starscream;
+			sourceTree = "<group>";
+		};
+		42EA2FC708BFA3F3D597E1006BAB15E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B092EFC19B17D604A6E83AEE2E2F5968 /* Starscream.modulemap */,
+				16DFA9709480B770DDC201B4898DBA8F /* Starscream-dummy.m */,
+				303E4259DE5A798BEB5AA6F49E4BA9A1 /* Starscream-Info.plist */,
+				3022893568E5A753304B27DAC815E88F /* Starscream-prefix.pch */,
+				26C7B985038248506E2A16DD58D0D5B3 /* Starscream-umbrella.h */,
+				E818AFA576F65504ED0894F75C062C52 /* Starscream.debug.xcconfig */,
+				5B8399BCEDC56523C299E0A8690710E1 /* Starscream.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Starscream";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A4D2B829EAE1170FBA17C80076AFD3E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C4555FF5EE1E4F6A4F98C747CCF889A /* LeapCreatorSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60A3DDD852F6F88CDEAE499CF8D442B8 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B831D97058972B99AC457E37B553130 /* GzipSwift.modulemap */,
+				73A7AE421BFB4D7549C8ACDADDDBB160 /* GzipSwift-dummy.m */,
+				588230F8BA3BD0F02A49FA651D3BE726 /* GzipSwift-Info.plist */,
+				EFE0F3DD066599A6D280B3717D8BFC83 /* GzipSwift-prefix.pch */,
+				C7B71DA28ADD09293873183371DDF008 /* GzipSwift-umbrella.h */,
+				5F73E167C7BABF837B15D13447849884 /* GzipSwift.debug.xcconfig */,
+				789B82E81B19EF8B1E8E21DC92F62491 /* GzipSwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GzipSwift";
+			sourceTree = "<group>";
+		};
+		8A94DEB2CF9135E24F79BE80F46A6B10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BFF1BDBF710EC3E6B0AC141E0759800 /* GzipSwift */,
+				15F84C0A488FEB5D636584688CE3E7B0 /* LeapCoreSDK */,
+				9CB78E8600013BDACA321455DFD0DCA1 /* LeapCreatorSDK */,
+				CD10D32C6EB4B01B1ED244CE6EC4D612 /* LeapSDK */,
+				306B1FC4D5EFF29D5FE44A6B5CEBF3F9 /* Starscream */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9CB78E8600013BDACA321455DFD0DCA1 /* LeapCreatorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				5A4D2B829EAE1170FBA17C80076AFD3E /* Frameworks */,
+				C80B9284B11ECC72542ED7E0D10A03A6 /* Support Files */,
+			);
+			name = LeapCreatorSDK;
+			path = LeapCreatorSDK;
+			sourceTree = "<group>";
+		};
+		BF6B23665C81A8204C68863553A9492C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA744F3156C6AD3B9CAC593E9268FE77 /* LeapSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C80B9284B11ECC72542ED7E0D10A03A6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E5CCF53E4B49DD9B52A0DD61CD7E32A /* LeapCreatorSDK-xcframeworks.sh */,
+				234A82987EC630D796CCF6B333A701DB /* LeapCreatorSDK.debug.xcconfig */,
+				047D4200F4283F467D6518D930B61AB0 /* LeapCreatorSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LeapCreatorSDK";
+			sourceTree = "<group>";
+		};
+		CD10D32C6EB4B01B1ED244CE6EC4D612 /* LeapSDK */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B23665C81A8204C68863553A9492C /* Frameworks */,
+				292B50D60AE7286EBE0D94581344E28D /* Support Files */,
+			);
+			name = LeapSDK;
+			path = LeapSDK;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				8A94DEB2CF9135E24F79BE80F46A6B10 /* Pods */,
+				18639E010C15F835E4375BB364D302EA /* Products */,
+				21FB03384C4AB59D35099DAF23A640E1 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8DF0CB0E918DA9A7F21ABFEB690A8BF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8EAF4CAB6844D045ACEA526A8365AC07 /* LeapCoreSDK-xcframeworks.sh */,
+				A9B8E2F1ED54C8505B580BCE4386E575 /* LeapCoreSDK.debug.xcconfig */,
+				9BDCB56C09BED6BFDA92ADF915D1A943 /* LeapCoreSDK.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LeapCoreSDK";
+			sourceTree = "<group>";
+		};
+		ED2A762C931ABF12798E854728E85296 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F5947EBBA9766E1968E69677F833184 /* LeapCoreSDK.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		41190CB9D2AFE4E326EF865D799C439D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9ED01F74690A44257CDCC24219F1436C /* Starscream-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B5D27A9D67AAC9832B001F9252C124 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE60E80D355466904F1FDAE558DD3BD5 /* GzipSwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5DD1FBFF7AF1264D9B6A60190D71B38 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E463F260D9A8F5E21AC0B1F1730D7F /* Pods-Leap Preview-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		126CC1C605B324F2E2D93EE60251ACA2 /* Pods-Leap Preview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6FF32FBC01001355E71C602A5C6CF9C9 /* Build configuration list for PBXNativeTarget "Pods-Leap Preview" */;
+			buildPhases = (
+				E5DD1FBFF7AF1264D9B6A60190D71B38 /* Headers */,
+				2E2517E4875BED4C04670BF3512C6C8A /* Sources */,
+				2382400F668649D69A3BF059E946BD75 /* Frameworks */,
+				B38673C90437906A782409E2840277CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08B1E691B555CA29EFAF3D4D1EFF8892 /* PBXTargetDependency */,
+				11949461850D67968D60B707B00FFB8E /* PBXTargetDependency */,
+				2C0729FB09C455E98B01A85683511C20 /* PBXTargetDependency */,
+				075C120BAF2AB12EACC5031FAA662A94 /* PBXTargetDependency */,
+				FD973208D85D587B45BEAA07CF6AEAEC /* PBXTargetDependency */,
+			);
+			name = "Pods-Leap Preview";
+			productName = "Pods-Leap Preview";
+			productReference = 0E7C85528C659AB9115CEB2E64E44C9B /* Pods_Leap_Preview.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8868051ECB7CB2E1A56270E3A6281973 /* GzipSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A57692E4AF13EFE7D41695CFF078CE62 /* Build configuration list for PBXNativeTarget "GzipSwift" */;
+			buildPhases = (
+				D1B5D27A9D67AAC9832B001F9252C124 /* Headers */,
+				C3C0086EE24D307CBE3CCAA31AB74ED7 /* Sources */,
+				06E9113E989352F941FD0227DC1E8E7A /* Frameworks */,
+				C94936E1012D63C47C2B68A61D2377BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GzipSwift;
+			productName = GzipSwift;
+			productReference = 144D90AC44A6AE9000AE71A58E7D6234 /* Gzip.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAF6C2EE2539DDCBEC8432EE3C67ED28 /* Build configuration list for PBXNativeTarget "Starscream" */;
+			buildPhases = (
+				41190CB9D2AFE4E326EF865D799C439D /* Headers */,
+				CEDD3663604A8415D555FE9AA69D9879 /* Sources */,
+				A5BCC0B169DAF1FC4912330E6FCFC58D /* Frameworks */,
+				6120D32401AE398F231D92A228D07D06 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Starscream;
+			productName = Starscream;
+			productReference = 891B2270823847ED23F2ECFC28F935EC /* Starscream.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 18639E010C15F835E4375BB364D302EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8868051ECB7CB2E1A56270E3A6281973 /* GzipSwift */,
+				855462ABEAD0DCE4F2927F4F332FEEBC /* LeapCoreSDK */,
+				9B2ACDBB8AB13C19964A954662941DBD /* LeapCreatorSDK */,
+				B70C00BBD64A0C47DA5DB030D9C24FE2 /* LeapSDK */,
+				126CC1C605B324F2E2D93EE60251ACA2 /* Pods-Leap Preview */,
+				9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6120D32401AE398F231D92A228D07D06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B38673C90437906A782409E2840277CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C94936E1012D63C47C2B68A61D2377BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		504F21A87D685A617B729C10D4A1268F /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LeapCreatorSDK/LeapCreatorSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LeapCreatorSDK/LeapCreatorSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/LeapCreatorSDK/LeapCreatorSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88800F54C4A3A94F81E65386815FBC3D /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LeapSDK/LeapSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LeapSDK/LeapSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/LeapSDK/LeapSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9667962A992764F500BEB8AA57AC2820 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LeapCoreSDK/LeapCoreSDK-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/LeapCoreSDK/LeapCoreSDK-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/LeapCoreSDK/LeapCoreSDK-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E2517E4875BED4C04670BF3512C6C8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F7769634CDD0D97E251CA312614617C /* Pods-Leap Preview-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3C0086EE24D307CBE3CCAA31AB74ED7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96C844A2DC0C2E38247A953D0FD97DF /* Data+Gzip.swift in Sources */,
+				0798C6BB0C582DFD3EBC05A7DA8E01FE /* GzipSwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEDD3663604A8415D555FE9AA69D9879 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82BF616114698FB6DB52D433B1C9B580 /* Compression.swift in Sources */,
+				FC36C84EDFF84873524597556F0D3F51 /* Data+Extensions.swift in Sources */,
+				886FF7A2DEAC80CEC9632D97718DDE4D /* Engine.swift in Sources */,
+				CC2243574B0C9085D6F5DD43C9BE665F /* FoundationHTTPHandler.swift in Sources */,
+				793850CE1DD83A755AC1B7B12E484424 /* FoundationHTTPServerHandler.swift in Sources */,
+				5FAEF225C11FC49A148595C8532EE6BE /* FoundationSecurity.swift in Sources */,
+				5193E1092A8477B576F438D892F3BECD /* FoundationTransport.swift in Sources */,
+				6E1E3578051AD96EA961F3DABAB298EE /* FrameCollector.swift in Sources */,
+				F9E5365065C11F9C0B1E4C3F04A46F77 /* Framer.swift in Sources */,
+				8BE5037A608A8AF29DF474430EA6AD7F /* HTTPHandler.swift in Sources */,
+				95EAF924C1AE943DB4B560BED4F54547 /* NativeEngine.swift in Sources */,
+				23C43D95C8E672B050E90722DC08FEBD /* Security.swift in Sources */,
+				9F27E3E5142F2EED77CB6BE0D29F067B /* Server.swift in Sources */,
+				FE96C495BB7155BB2F1A8F9C71EEAA43 /* Starscream-dummy.m in Sources */,
+				0909F010EAC3531A30D2B417592F47A5 /* StringHTTPHandler.swift in Sources */,
+				EEC03018A1A4271C71927A80AE61D8AD /* TCPTransport.swift in Sources */,
+				501130F6C1CAFCED4597FFDBAE077DF1 /* Transport.swift in Sources */,
+				12FB526005B464FA51CC221BD63A693C /* WebSocket.swift in Sources */,
+				58539BE15781AB9CC82B6AAF1E27F7C2 /* WebSocketServer.swift in Sources */,
+				FF157598B98720646709DF75BD8406BF /* WSCompression.swift in Sources */,
+				CCAA615313D4845C4F83AE743F25E24B /* WSEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		075C120BAF2AB12EACC5031FAA662A94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeapSDK;
+			target = B70C00BBD64A0C47DA5DB030D9C24FE2 /* LeapSDK */;
+			targetProxy = D5CB105B531BF996B0F11ABD5EECAE82 /* PBXContainerItemProxy */;
+		};
+		08B1E691B555CA29EFAF3D4D1EFF8892 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GzipSwift;
+			target = 8868051ECB7CB2E1A56270E3A6281973 /* GzipSwift */;
+			targetProxy = 383679207269D698855452485718D557 /* PBXContainerItemProxy */;
+		};
+		11949461850D67968D60B707B00FFB8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeapCoreSDK;
+			target = 855462ABEAD0DCE4F2927F4F332FEEBC /* LeapCoreSDK */;
+			targetProxy = 6B730905AB88EE6CAEBDCAB21F48693F /* PBXContainerItemProxy */;
+		};
+		2C0729FB09C455E98B01A85683511C20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeapCreatorSDK;
+			target = 9B2ACDBB8AB13C19964A954662941DBD /* LeapCreatorSDK */;
+			targetProxy = 1652F5DC58A644E95DE8BD82E63C4F0C /* PBXContainerItemProxy */;
+		};
+		42A6B29D58FBD1906D564F999AC415A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GzipSwift;
+			target = 8868051ECB7CB2E1A56270E3A6281973 /* GzipSwift */;
+			targetProxy = 457DF771E53CB6FBD93C9E9A5D93A220 /* PBXContainerItemProxy */;
+		};
+		CA8FAAC0990C59D7B8CED841A035A66D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = E4E757942021FA24879F7B9489015AC1 /* PBXContainerItemProxy */;
+		};
+		CB85EFDEE7D4475CE379269FFDD6EE40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LeapCoreSDK;
+			target = 855462ABEAD0DCE4F2927F4F332FEEBC /* LeapCoreSDK */;
+			targetProxy = 5D0E954F56D2985E6DCD30D34CFD95E7 /* PBXContainerItemProxy */;
+		};
+		FD973208D85D587B45BEAA07CF6AEAEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Starscream;
+			target = 9B78EE4AF6AE03E79D88886319853FF7 /* Starscream */;
+			targetProxy = 5C6FBDF7A037CC4B2A745A30E3B4ADF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0082FC00BCCBFCAA63AA5C98EA587C17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		29D215BE42B21AFEEEE8A1BC6A58E0E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F73E167C7BABF837B15D13447849884 /* GzipSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GzipSwift/GzipSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GzipSwift/GzipSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GzipSwift/GzipSwift.modulemap";
+				PRODUCT_MODULE_NAME = Gzip;
+				PRODUCT_NAME = Gzip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		450A19E02B9017849880C8A7DE3CC822 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BDCB56C09BED6BFDA92ADF915D1A943 /* LeapCoreSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B6C3CC1E9EB091C9206D0620793228A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 789B82E81B19EF8B1E8E21DC92F62491 /* GzipSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/GzipSwift/GzipSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/GzipSwift/GzipSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/GzipSwift/GzipSwift.modulemap";
+				PRODUCT_MODULE_NAME = Gzip;
+				PRODUCT_NAME = Gzip;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BC8CA2D6AE4803B7F82DC24BFF744E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9B8E2F1ED54C8505B580BCE4386E575 /* LeapCoreSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5ED2A6194878D943F8239ACD696235FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3211EDD8CF445F7F43DB8D7980ACE4C8 /* Pods-Leap Preview.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D7009F9398AF1365915319699EC1A80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E818AFA576F65504ED0894F75C062C52 /* Starscream.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9567FF25718029CA84FCACD6DCDF70C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBA12AD9993A69D6BE70C60C215AB53A /* Pods-Leap Preview.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		99D169163C2A4A4317ADDC3BEF50038C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 234A82987EC630D796CCF6B333A701DB /* LeapCreatorSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6EB39450C141849A799076DEDC97F55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00C9249EF67397BC460DE1A28D34089A /* LeapSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4025898A61479137E7B97998224758A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047D4200F4283F467D6518D930B61AB0 /* LeapCreatorSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCF3FA0172EE65F179A5B03EA4104698 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2643AC56443649B69786EDE5721006B /* LeapSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E5B12AB88A4F6C443C963D290ECB2428 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F5443F7A4F312DB69413AFF28423AAEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B8399BCEDC56523C299E0A8690710E1 /* Starscream.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Starscream/Starscream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Starscream/Starscream-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Starscream/Starscream.modulemap";
+				PRODUCT_MODULE_NAME = Starscream;
+				PRODUCT_NAME = Starscream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0082FC00BCCBFCAA63AA5C98EA587C17 /* Debug */,
+				E5B12AB88A4F6C443C963D290ECB2428 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DA29CD56A8C4D0CB4408ED4ABF469E9 /* Build configuration list for PBXAggregateTarget "LeapSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCF3FA0172EE65F179A5B03EA4104698 /* Debug */,
+				A6EB39450C141849A799076DEDC97F55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6FF32FBC01001355E71C602A5C6CF9C9 /* Build configuration list for PBXNativeTarget "Pods-Leap Preview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9567FF25718029CA84FCACD6DCDF70C0 /* Debug */,
+				5ED2A6194878D943F8239ACD696235FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85C2A394025A7D8DE48E61B1AB22642B /* Build configuration list for PBXAggregateTarget "LeapCreatorSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99D169163C2A4A4317ADDC3BEF50038C /* Debug */,
+				C4025898A61479137E7B97998224758A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CBC686FB73E8B3F28606582A4415C64 /* Build configuration list for PBXAggregateTarget "LeapCoreSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC8CA2D6AE4803B7F82DC24BFF744E6 /* Debug */,
+				450A19E02B9017849880C8A7DE3CC822 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A57692E4AF13EFE7D41695CFF078CE62 /* Build configuration list for PBXNativeTarget "GzipSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29D215BE42B21AFEEEE8A1BC6A58E0E0 /* Debug */,
+				5B6C3CC1E9EB091C9206D0620793228A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAF6C2EE2539DDCBEC8432EE3C67ED28 /* Build configuration list for PBXNativeTarget "Starscream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7009F9398AF1365915319699EC1A80 /* Debug */,
+				F5443F7A4F312DB69413AFF28423AAEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

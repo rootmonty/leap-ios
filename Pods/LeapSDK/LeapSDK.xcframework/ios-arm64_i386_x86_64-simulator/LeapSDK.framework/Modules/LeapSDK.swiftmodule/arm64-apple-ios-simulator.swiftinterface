@@ -1,0 +1,33 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LeapSDK
+import AVFoundation
+import Foundation
+import LeapCoreSDK
+import Swift
+import UIKit
+import WebKit
+@objc public protocol LeapCallback : ObjectiveC.NSObjectProtocol {
+  @objc func eventNotification(eventInfo: Swift.Dictionary<Swift.String, Any>)
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Leap : ObjectiveC.NSObject {
+  @objc public static let shared: LeapSDK.Leap
+  @objc weak public var callback: LeapSDK.LeapCallback? {
+    @objc get
+    @objc set
+  }
+  @discardableResult
+  @objc public func withBuilder(_ apiKey: Swift.String) -> LeapSDK.Leap?
+  @discardableResult
+  @objc public func addProperty(_ key: Swift.String, stringValue: Swift.String) -> LeapSDK.Leap
+  @discardableResult
+  @objc public func addProperty(_ key: Swift.String, intValue: Swift.Int) -> LeapSDK.Leap
+  @discardableResult
+  @objc public func addProperty(_ key: Swift.String, dateValue: Foundation.Date) -> LeapSDK.Leap
+  @objc public func start()
+  @objc public func flush()
+  @objc public func start(_ apiKey: Swift.String)
+  @objc public func disable()
+  @objc public func addIdentifier(identifier: Swift.String, value: Any)
+  @objc deinit
+}
