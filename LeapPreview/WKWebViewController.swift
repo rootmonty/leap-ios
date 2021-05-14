@@ -26,7 +26,9 @@ class WKWebViewController: UIViewController {
         self.view.addSubview(wkWebView!)
         configureWebView()
         
-        openCameraViewController(isRescan: false)
+        let connectedAppInfo = UserDefaults.standard.object(forKey: "sampleAppInfoDict") as? Dictionary<String, Any>
+        
+        openCameraViewController(isRescan: connectedAppInfo == nil ? true : false)
         
         NotificationCenter.default.addObserver(self, selector: #selector(push), name: .init("rescan"), object: nil)
     }
@@ -50,8 +52,10 @@ class WKWebViewController: UIViewController {
         leapCameraViewController = LeapCreator.shared.openSampleApp(delegate: self)
         guard leapCameraViewController != nil else { return }
         leapCameraViewController?.modalPresentationStyle = .fullScreen
-        DispatchQueue.main.async {
-           self.present(self.leapCameraViewController!, animated: true, completion: nil)
+        if isRescan {
+            DispatchQueue.main.async {
+               self.present(self.leapCameraViewController!, animated: true, completion: nil)
+            }
         }
     }
     
