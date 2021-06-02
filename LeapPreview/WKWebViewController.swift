@@ -54,7 +54,7 @@ class WKWebViewController: UIViewController {
         leapCameraViewController?.modalPresentationStyle = .fullScreen
         if isRescan {
             DispatchQueue.main.async {
-               self.present(self.leapCameraViewController!, animated: true, completion: nil)
+                self.present(self.leapCameraViewController!, animated: true, completion: nil)
             }
         }
     }
@@ -63,21 +63,17 @@ class WKWebViewController: UIViewController {
         
         if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP", let apiKey = infoDict["apiKey"] as? String {
             
-            #if targetEnvironment(simulator)
-            leapCameraViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
-            #else
             leapCameraViewController?.dismiss(animated: true, completion: nil)
-            #endif
             
-           UserDefaults.standard.setValue(infoDict, forKey: "sampleAppInfoDict")
+            UserDefaults.standard.setValue(infoDict, forKey: "sampleAppInfoDict")
             
-           Leap.shared.start(apiKey)
-           LeapCreator.shared.start(apiKey)
+            Leap.shared.start(apiKey)
+            LeapCreator.shared.start(apiKey)
             
-           if let infoDict = (UserDefaults.standard.object(forKey: "sampleAppInfoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {
-               wkWebView?.load(URLRequest(url: URL(string: url)!))
-           }
-           
+            if let infoDict = (UserDefaults.standard.object(forKey: "sampleAppInfoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {
+                wkWebView?.load(URLRequest(url: URL(string: url)!))
+            }
+            
         } else {
             
             let wrongQRAlert = UIAlertController(title: "QR not matched", message: "Please scan a QR for an iOS App", preferredStyle: .alert)
@@ -101,7 +97,7 @@ class WKWebViewController: UIViewController {
 extension WKWebViewController: SampleAppDelegate {
     func sendInfo(infoDict: Dictionary<String, Any>) {
         DispatchQueue.main.async {
-           self.found(infoDict: infoDict)
+            self.found(infoDict: infoDict)
         }
     }
 }
