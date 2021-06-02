@@ -63,7 +63,11 @@ class WKWebViewController: UIViewController {
         
         if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP", let apiKey = infoDict["apiKey"] as? String {
             
-           leapCameraViewController?.dismiss(animated: true, completion: nil)
+            #if targetEnvironment(simulator)
+            leapCameraViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+            #else
+            leapCameraViewController?.dismiss(animated: true, completion: nil)
+            #endif
             
            UserDefaults.standard.setValue(infoDict, forKey: "sampleAppInfoDict")
             
