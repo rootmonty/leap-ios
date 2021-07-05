@@ -1,6 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-Leap Preview/Pods-Leap Preview-frameworks.sh
-${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework
-${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapCoreSDK/LeapCoreSDK.framework/LeapCoreSDK
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapCreatorSDK/LeapCreatorSDK.framework/LeapCreatorSDK
 ${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapSDK/LeapSDK.framework/LeapSDK
