@@ -175,15 +175,11 @@ code_sign_if_enabled() {
 }
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapCoreSDK/LeapCoreSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapCreatorSDK/LeapCreatorSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapSDK/LeapSDK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "${BUILT_PRODUCTS_DIR}/GzipSwift/Gzip.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapCoreSDK/LeapCoreSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapCreatorSDK/LeapCreatorSDK.framework"
   install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/LeapSDK/LeapSDK.framework"
