@@ -1,12 +1,12 @@
 PODS:
-  - LeapCoreSDK (1.0.0)
-  - LeapCreatorSDK (1.0.0)
-  - LeapSDK (1.0.0):
-    - LeapCoreSDK (~> 1.0.0)
+  - LeapCoreSDK (1.0.1)
+  - LeapCreatorSDK (1.0.1)
+  - LeapSDK (1.0.1):
+    - LeapCoreSDK (~> 1.0.1)
 
 DEPENDENCIES:
-  - LeapCreatorSDK (~> 1.0.0)
-  - LeapSDK (~> 1.0.0)
+  - LeapCreatorSDK (~> 1.0.1)
+  - LeapSDK (~> 1.0.1)
 
 SPEC REPOS:
   trunk:
@@ -15,10 +15,10 @@ SPEC REPOS:
     - LeapSDK
 
 SPEC CHECKSUMS:
-  LeapCoreSDK: e3ba6d345e86f36c5ba7b24a20c278a8545410dd
-  LeapCreatorSDK: d3fe33d3a9a175e725ad9e4330b5005741c8e6ef
-  LeapSDK: 14b9aae215b872a56cf1d2286507423a688472e4
+  LeapCoreSDK: c81a566fcf4b7f7021f2c783d5738b511beac32c
+  LeapCreatorSDK: 30fcbc18e9b8dc3d57ed3be9ea9cd99068d55f5d
+  LeapSDK: 30a7ecb6f0a2be3725e3dc2fcdca106d6079c176
 
-PODFILE CHECKSUM: db9c8116522c2b49e15558e33290eeb734d7fef4
+PODFILE CHECKSUM: dc8ee069077ccc29521dcc5d717dbe02b65a6b9d
 
 COCOAPODS: 1.10.1
