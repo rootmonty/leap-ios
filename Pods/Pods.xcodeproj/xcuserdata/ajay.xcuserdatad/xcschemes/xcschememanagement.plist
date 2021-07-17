@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GzipSwift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>LeapCoreSDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,11 +20,6 @@
 			<false/>
 		</dict>
 		<key>Pods-Leap Preview.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Starscream.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
