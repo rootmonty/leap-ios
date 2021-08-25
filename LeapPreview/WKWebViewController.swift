@@ -26,11 +26,11 @@ class WKWebViewController: UIViewController {
         self.view.addSubview(wkWebView!)
         configureWebView()
         
-        let connectedAppInfo = UserDefaults.standard.object(forKey: "sampleAppInfoDict") as? Dictionary<String, Any>
+        let connectedAppInfo = UserDefaults.standard.object(forKey: constant_sampleAppInfoDict) as? Dictionary<String, Any>
         
         openCameraViewController(isRescan: connectedAppInfo == nil ? true : false)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(push), name: .init("rescan"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(push), name: .init(constant_rescan), object: nil)
     }
     
     func configureWebView() {
@@ -48,7 +48,7 @@ class WKWebViewController: UIViewController {
     
     func openCameraViewController(isRescan: Bool) {
         
-        UserDefaults.standard.setValue(isRescan, forKey: "sampleAppRescan")
+        UserDefaults.standard.setValue(isRescan, forKey: constant_sampleAppRescan)
         leapCameraViewController = LeapCreator.shared.openSampleApp(delegate: self)
         guard leapCameraViewController != nil else { return }
         leapCameraViewController?.modalPresentationStyle = .fullScreen
@@ -61,23 +61,23 @@ class WKWebViewController: UIViewController {
     
     func found(infoDict: Dictionary<String, Any?>) {
         
-        if let platformType = infoDict["platformType"] as? String, platformType == "IOS", let owner = infoDict["owner"] as? String, owner == "LEAP", let apiKey = infoDict["apiKey"] as? String {
+        if let platformType = infoDict[constant_platformType] as? String, platformType == constant_IOS, let owner = infoDict[constant_owner] as? String, owner == constant_LEAP, let apiKey = infoDict[constant_apiKey] as? String {
             
             leapCameraViewController?.dismiss(animated: true, completion: nil)
             
-            UserDefaults.standard.setValue(infoDict, forKey: "sampleAppInfoDict")
+            UserDefaults.standard.setValue(infoDict, forKey: constant_sampleAppInfoDict)
             
             Leap.shared.start(apiKey)
             LeapCreator.shared.start(apiKey)
             
-            if let infoDict = (UserDefaults.standard.object(forKey: "sampleAppInfoDict") as? Dictionary<String,Any>), let url = infoDict["webUrl"] as? String {
+            if let infoDict = (UserDefaults.standard.object(forKey: constant_sampleAppInfoDict) as? Dictionary<String,Any>), let url = infoDict[constant_webUrl] as? String {
                 wkWebView?.load(URLRequest(url: URL(string: url)!))
             }
             
         } else {
             
-            let wrongQRAlert = UIAlertController(title: "QR not matched", message: "Please scan a QR for an iOS App", preferredStyle: .alert)
-            wrongQRAlert.addAction(UIAlertAction(title: "OK", style: .default))
+            let wrongQRAlert = UIAlertController(title: constant_QRErrorTitle, message: constant_QRErrorMessage, preferredStyle: .alert)
+            wrongQRAlert.addAction(UIAlertAction(title: constant_OK, style: .default))
             present(wrongQRAlert, animated: true)
         }
     }
