@@ -14,6 +14,7 @@
 		2D1C6FE025E4D4A40079BB17 /* LeapPreviewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FDF25E4D4A40079BB17 /* LeapPreviewTests.swift */; };
 		2D1C6FEB25E4D4A40079BB17 /* LeapPreviewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FEA25E4D4A40079BB17 /* LeapPreviewUITests.swift */; };
 		2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */; };
+		2D9ABD8D26D69CD900E42136 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9ABD8C26D69CD900E42136 /* AppConstants.swift */; };
 		83AD5E78F850FEFD92B73483 /* Pods_Leap_Preview.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 957EC8E9B2F2389406911DD3 /* Pods_Leap_Preview.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		2D1C6FFE25E4F0C50079BB17 /* WKWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWebViewController.swift; sourceTree = "<group>"; };
 		2D1C701A25E66DED0079BB17 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		2D1C701C25E66DED0079BB17 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		2D9ABD8C26D69CD900E42136 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		953E5B65EF81EF4DB38E4DC2 /* Pods-Leap Preview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Leap Preview.debug.xcconfig"; path = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.debug.xcconfig"; sourceTree = "<group>"; };
 		957EC8E9B2F2389406911DD3 /* Pods_Leap_Preview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Leap_Preview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 				2D1C6FD125E4D4A30079BB17 /* Assets.xcassets */,
 				2D1C6FD325E4D4A30079BB17 /* LaunchScreen.storyboard */,
 				2D1C6FD625E4D4A30079BB17 /* Info.plist */,
+				2D9ABD8C26D69CD900E42136 /* AppConstants.swift */,
 			);
 			path = LeapPreview;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1C6FC925E4D4A10079BB17 /* AppDelegate.swift in Sources */,
+				2D9ABD8D26D69CD900E42136 /* AppConstants.swift in Sources */,
 				2D1C6FFF25E4F0C50079BB17 /* WKWebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
