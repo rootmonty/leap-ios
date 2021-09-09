@@ -228,12 +228,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Leap * _Nonn
 - (void)start;
 - (void)flush;
 - (void)start:(NSString * _Nonnull)apiKey;
-- (void)start:(NSString * _Nonnull)apiKey projectId:(NSString * _Nonnull)projectId resetProject:(BOOL)resetProject;
 - (void)startProject:(NSString * _Nonnull)projectId resetProject:(BOOL)resetProject;
 - (void)embedProject:(NSString * _Nonnull)projectId;
 - (void)disable;
 - (void)addIdentifierWithIdentifier:(NSString * _Nonnull)identifier value:(id _Nonnull)value;
 @end
+
 
 
 
@@ -482,12 +482,12 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) Leap * _Nonn
 - (void)start;
 - (void)flush;
 - (void)start:(NSString * _Nonnull)apiKey;
-- (void)start:(NSString * _Nonnull)apiKey projectId:(NSString * _Nonnull)projectId resetProject:(BOOL)resetProject;
 - (void)startProject:(NSString * _Nonnull)projectId resetProject:(BOOL)resetProject;
 - (void)embedProject:(NSString * _Nonnull)projectId;
 - (void)disable;
 - (void)addIdentifierWithIdentifier:(NSString * _Nonnull)identifier value:(id _Nonnull)value;
 @end
+
 
 
 
