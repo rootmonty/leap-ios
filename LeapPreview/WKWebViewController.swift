@@ -67,8 +67,8 @@ class WKWebViewController: UIViewController {
             
             UserDefaults.standard.setValue(infoDict, forKey: constant_sampleAppInfoDict)
             
-            Leap.shared.start(apiKey)
-            LeapCreator.shared.start(apiKey)
+//            Leap.shared.start(apiKey)
+//            LeapCreator.shared.start(apiKey)
             
             if let infoDict = (UserDefaults.standard.object(forKey: constant_sampleAppInfoDict) as? Dictionary<String,Any>), let url = infoDict[constant_webUrl] as? String {
                 wkWebView?.load(URLRequest(url: URL(string: url)!))
