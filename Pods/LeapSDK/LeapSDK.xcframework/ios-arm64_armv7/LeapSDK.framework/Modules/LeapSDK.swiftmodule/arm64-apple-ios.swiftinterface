@@ -27,7 +27,6 @@ import WebKit
   @objc public func start()
   @objc public func flush()
   @objc public func start(_ apiKey: Swift.String)
-  @objc public func start(_ apiKey: Swift.String, projectId: Swift.String, resetProject: Swift.Bool = false)
   @objc public func startProject(_ projectId: Swift.String, resetProject: Swift.Bool = false)
   @objc public func embedProject(_ projectId: Swift.String)
   @objc public func disable()
