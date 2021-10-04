@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LeapCreatorSDK
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name LeapCreatorSDK
 import AVFoundation
 import CommonCrypto
 import Foundation
@@ -14,10 +14,8 @@ import zlib
 public protocol SampleAppDelegate : AnyObject {
   func sendInfo(infoDict: Swift.Dictionary<Swift.String, Any>)
 }
-extension Data {
-}
 @_inheritsConvenienceInitializers @objc public class LeapCreator : ObjectiveC.NSObject {
-  @objc public static let shared: LeapCreatorSDK.LeapCreator
+  @objc public static var shared: LeapCreatorSDK.LeapCreator
   @objc public func start(_ apiKey: Swift.String)
   public func openSampleApp(delegate: LeapCreatorSDK.SampleAppDelegate) -> UIKit.UIViewController?
   @objc override dynamic public init()
