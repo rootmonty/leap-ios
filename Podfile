@@ -7,7 +7,7 @@ target 'Leap Preview' do
 
   # Pods for Leap Preview
 
-pod 'LeapSDK', '~> 1.1.3'
-pod 'LeapCreatorSDK', '~> 1.1.3'
+pod 'LeapSDK', '~> 1.1.7'
+pod 'LeapCreatorSDK', '~> 1.1.7'
 
 end
