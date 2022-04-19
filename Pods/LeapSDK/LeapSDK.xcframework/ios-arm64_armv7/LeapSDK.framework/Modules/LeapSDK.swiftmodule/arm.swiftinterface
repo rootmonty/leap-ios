@@ -1,20 +1,21 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
-// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name LeapSDK
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name LeapSDK
 import AVFoundation
 import Foundation
 import LeapCoreSDK
 import Swift
 import UIKit
 import WebKit
+import _Concurrency
 @objc public protocol LeapCallback : ObjectiveC.NSObjectProtocol {
   @objc func eventNotification(eventInfo: Swift.Dictionary<Swift.String, Any>)
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class Leap : ObjectiveC.NSObject {
-  @objc public static var shared: LeapSDK.Leap
+  @objc public static let shared: LeapSDK.Leap
   @objc weak public var callback: LeapSDK.LeapCallback? {
     @objc get
-    @objc set(value)
+    @objc set
   }
   @discardableResult
   @objc public func withBuilder(_ apiKey: Swift.String) -> LeapSDK.Leap?
