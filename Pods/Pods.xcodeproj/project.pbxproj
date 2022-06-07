@@ -41,25 +41,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		60CCD74D2411E8893E5806B3166F154A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		8D5BD7DBF6FCBC818B1E6A0CB9455ED4 /* Pods-Leap Preview-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F59F846E7DDC95B5812FA4484206D18 /* Pods-Leap Preview-dummy.m */; };
-		D241EA1B6979DDC4AA98001195E6400B /* Pods-Leap Preview-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FCDB2483E3E675F9B674309DA16202 /* Pods-Leap Preview-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3310E536629C84177DAE4E545B76CD48 /* Pods-Leap Preview-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7FCDB2483E3E675F9B674309DA16202 /* Pods-Leap Preview-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C57F92B58C450133F23BF9935B23E5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E0BB67380BE0D0F3BE6C71FE6816CAA1 /* Pods-Leap Preview-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F59F846E7DDC95B5812FA4484206D18 /* Pods-Leap Preview-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B621B6C7B6AF90C1C165C30E74A7A09 /* PBXContainerItemProxy */ = {
+		3B5691258056623A7AB038AD5B441D30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9B2ACDBB8AB13C19964A954662941DBD;
 			remoteInfo = LeapCreatorSDK;
-		};
-		2433D363E7617F6DEC728823F402394E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B70C00BBD64A0C47DA5DB030D9C24FE2;
-			remoteInfo = LeapSDK;
 		};
 		4B3E455BE3C325DD0316D936AA068691 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -68,7 +61,14 @@
 			remoteGlobalIDString = 855462ABEAD0DCE4F2927F4F332FEEBC;
 			remoteInfo = LeapCoreSDK;
 		};
-		BC750E42F7AA60BCEA2605F4FA6E3BB9 /* PBXContainerItemProxy */ = {
+		7BA5908F15CA952D7BD7728A4019B395 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B70C00BBD64A0C47DA5DB030D9C24FE2;
+			remoteInfo = LeapSDK;
+		};
+		CDD2F97F2A16449BD6EB9C362C495B91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -80,7 +80,7 @@
 /* Begin PBXFileReference section */
 		01C62248463780E60D99E8411777BAE6 /* LeapSDK-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "LeapSDK-xcframeworks.sh"; sourceTree = "<group>"; };
 		04D42B87619F355EF3165319B4C4568F /* LeapSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapSDK.debug.xcconfig; sourceTree = "<group>"; };
-		0E7C85528C659AB9115CEB2E64E44C9B /* Pods_Leap_Preview.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Leap_Preview.framework; path = "Pods-Leap Preview.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E7C85528C659AB9115CEB2E64E44C9B /* Pods-Leap Preview */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Leap Preview"; path = Pods_Leap_Preview.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E873C32C94F11ECA53323994B05472F /* LeapCreatorSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapCreatorSDK.debug.xcconfig; sourceTree = "<group>"; };
 		21A4CA7B83BAE4F029778268CD56D8AA /* LeapCreatorSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LeapCreatorSDK.release.xcconfig; sourceTree = "<group>"; };
 		3211EDD8CF445F7F43DB8D7980ACE4C8 /* Pods-Leap Preview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Leap Preview.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,11 +105,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3754DCAED56A336CF6C92F276512F117 /* Frameworks */ = {
+		495E0C2BF0E7D91E18E26252E5891C59 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60CCD74D2411E8893E5806B3166F154A /* Foundation.framework in Frameworks */,
+				5C57F92B58C450133F23BF9935B23E5F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +189,14 @@
 			path = LeapCreatorSDK;
 			sourceTree = "<group>";
 		};
+		6ABD39A2C0EE34D91EF001EC784992FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0E7C85528C659AB9115CEB2E64E44C9B /* Pods-Leap Preview */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7682CF7A7914635C98FBF521594898DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -227,14 +235,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3105067497E4854EA324FC97401E76E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0E7C85528C659AB9115CEB2E64E44C9B /* Pods_Leap_Preview.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C9DBA440B9CC16A2E1298FA0B521717C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -252,7 +252,7 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				14317FAF337CF7B94FA5AAA775FDEEA9 /* Pods */,
-				C3105067497E4854EA324FC97401E76E /* Products */,
+				6ABD39A2C0EE34D91EF001EC784992FA /* Products */,
 				21FB03384C4AB59D35099DAF23A640E1 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -276,11 +276,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		8BF1F62660F49B5C112613151970FAC8 /* Headers */ = {
+		D3BA2F0C22434FCC6B7AB04C506790A4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D241EA1B6979DDC4AA98001195E6400B /* Pods-Leap Preview-umbrella.h in Headers */,
+				3310E536629C84177DAE4E545B76CD48 /* Pods-Leap Preview-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,23 +289,23 @@
 /* Begin PBXNativeTarget section */
 		126CC1C605B324F2E2D93EE60251ACA2 /* Pods-Leap Preview */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FB53539DA9C0BBB276B8C59B61114AD /* Build configuration list for PBXNativeTarget "Pods-Leap Preview" */;
+			buildConfigurationList = C1DCDDC77DAC544A3E7EAE14D297952F /* Build configuration list for PBXNativeTarget "Pods-Leap Preview" */;
 			buildPhases = (
-				8BF1F62660F49B5C112613151970FAC8 /* Headers */,
-				918A300F2209166B9DAC657324B94F17 /* Sources */,
-				3754DCAED56A336CF6C92F276512F117 /* Frameworks */,
-				3E358EDD94CD0DD41F686DA0A4D91CFF /* Resources */,
+				D3BA2F0C22434FCC6B7AB04C506790A4 /* Headers */,
+				1457C32C05FED3AFCE3E4ECE27CA85F1 /* Sources */,
+				495E0C2BF0E7D91E18E26252E5891C59 /* Frameworks */,
+				189AEF50CDE030CC21880F914AC89342 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				28E127C625A2655CCC433922C82389E5 /* PBXTargetDependency */,
-				47D46C5208B9C3B4E24CF49F9AF7B4A3 /* PBXTargetDependency */,
-				F56775A4562B26345AFE56C1211EC235 /* PBXTargetDependency */,
+				447FD98DAD9C43AF69AB1890B4140AF9 /* PBXTargetDependency */,
+				465DA4D91E0794D1263E83CBAEC6EA82 /* PBXTargetDependency */,
+				4894F458ED50C0EEB2AD8CC3BA3AB1BC /* PBXTargetDependency */,
 			);
 			name = "Pods-Leap Preview";
-			productName = "Pods-Leap Preview";
-			productReference = 0E7C85528C659AB9115CEB2E64E44C9B /* Pods_Leap_Preview.framework */;
+			productName = Pods_Leap_Preview;
+			productReference = 0E7C85528C659AB9115CEB2E64E44C9B /* Pods-Leap Preview */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -314,19 +314,19 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
+				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = C3105067497E4854EA324FC97401E76E /* Products */;
+			productRefGroup = 6ABD39A2C0EE34D91EF001EC784992FA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -339,7 +339,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3E358EDD94CD0DD41F686DA0A4D91CFF /* Resources */ = {
+		189AEF50CDE030CC21880F914AC89342 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,11 +403,11 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		918A300F2209166B9DAC657324B94F17 /* Sources */ = {
+		1457C32C05FED3AFCE3E4ECE27CA85F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5BD7DBF6FCBC818B1E6A0CB9455ED4 /* Pods-Leap Preview-dummy.m in Sources */,
+				E0BB67380BE0D0F3BE6C71FE6816CAA1 /* Pods-Leap Preview-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,23 +420,23 @@
 			target = 855462ABEAD0DCE4F2927F4F332FEEBC /* LeapCoreSDK */;
 			targetProxy = 4B3E455BE3C325DD0316D936AA068691 /* PBXContainerItemProxy */;
 		};
-		28E127C625A2655CCC433922C82389E5 /* PBXTargetDependency */ = {
+		447FD98DAD9C43AF69AB1890B4140AF9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LeapCoreSDK;
 			target = 855462ABEAD0DCE4F2927F4F332FEEBC /* LeapCoreSDK */;
-			targetProxy = BC750E42F7AA60BCEA2605F4FA6E3BB9 /* PBXContainerItemProxy */;
+			targetProxy = CDD2F97F2A16449BD6EB9C362C495B91 /* PBXContainerItemProxy */;
 		};
-		47D46C5208B9C3B4E24CF49F9AF7B4A3 /* PBXTargetDependency */ = {
+		465DA4D91E0794D1263E83CBAEC6EA82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LeapCreatorSDK;
 			target = 9B2ACDBB8AB13C19964A954662941DBD /* LeapCreatorSDK */;
-			targetProxy = 1B621B6C7B6AF90C1C165C30E74A7A09 /* PBXContainerItemProxy */;
+			targetProxy = 3B5691258056623A7AB038AD5B441D30 /* PBXContainerItemProxy */;
 		};
-		F56775A4562B26345AFE56C1211EC235 /* PBXTargetDependency */ = {
+		4894F458ED50C0EEB2AD8CC3BA3AB1BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LeapSDK;
 			target = B70C00BBD64A0C47DA5DB030D9C24FE2 /* LeapSDK */;
-			targetProxy = 2433D363E7617F6DEC728823F402394E /* PBXContainerItemProxy */;
+			targetProxy = 7BA5908F15CA952D7BD7728A4019B395 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -524,6 +524,44 @@
 			};
 			name = Debug;
 		};
+		495186DE8027BC98446CFEB09A74F784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3211EDD8CF445F7F43DB8D7980ACE4C8 /* Pods-Leap Preview.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		5B477EECA38D2786A031BB58BA736029 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 21A4CA7B83BAE4F029778268CD56D8AA /* LeapCreatorSDK.release.xcconfig */;
@@ -542,7 +580,25 @@
 			};
 			name = Release;
 		};
-		5C9151608CDE04F685AB5225C4D73A4D /* Debug */ = {
+		84F253787B893F79233DFF2A6EDD92B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D015EC1DD45BA09F2738E1B4A2C426D /* LeapCoreSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9C0C1F4253D926F20A3A2082B6DE8696 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FBA12AD9993A69D6BE70C60C215AB53A /* Pods-Leap Preview.debug.xcconfig */;
 			buildSettings = {
@@ -578,24 +634,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		84F253787B893F79233DFF2A6EDD92B2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D015EC1DD45BA09F2738E1B4A2C426D /* LeapCoreSDK.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 		A6EB39450C141849A799076DEDC97F55 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -711,44 +749,6 @@
 			};
 			name = Release;
 		};
-		EED8C41670FCCF6CDC91FD8DD91923AA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3211EDD8CF445F7F43DB8D7980ACE4C8 /* Pods-Leap Preview.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Leap Preview/Pods-Leap Preview.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -757,15 +757,6 @@
 			buildConfigurations = (
 				A915C9ACB572BA34D0CA87B88D327751 /* Debug */,
 				84F253787B893F79233DFF2A6EDD92B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2FB53539DA9C0BBB276B8C59B61114AD /* Build configuration list for PBXNativeTarget "Pods-Leap Preview" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C9151608CDE04F685AB5225C4D73A4D /* Debug */,
-				EED8C41670FCCF6CDC91FD8DD91923AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -793,6 +784,15 @@
 			buildConfigurations = (
 				2E5B79F08AF8490808EDD0C43E3EE2E2 /* Debug */,
 				5B477EECA38D2786A031BB58BA736029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1DCDDC77DAC544A3E7EAE14D297952F /* Build configuration list for PBXNativeTarget "Pods-Leap Preview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C0C1F4253D926F20A3A2082B6DE8696 /* Debug */,
+				495186DE8027BC98446CFEB09A74F784 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
